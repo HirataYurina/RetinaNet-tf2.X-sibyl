@@ -5,7 +5,9 @@
 # filename:subnet.py
 # software: PyCharm
 
-import tensorflow as tf
+from net.resnet import ResNet
+from net.fpn import FPN
+
 import tensorflow.keras as keras
 import tensorflow.keras.layers as layers
 from core.initializer import BiasInitializer
@@ -37,7 +39,7 @@ class SubNet(keras.Model):
                                          bias_initializer=keras.initializers.Constant(value=0),
                                          name='class_conv4')
         # ----------------------------------------------------- #
-        # The kernel initializer is PriorProbability.
+        # The kernel initializer is PriorProbability
         # ----------------------------------------------------- #
         self.class_out = layers.Conv2D(filters=num_classes * num_anchors, kernel_size=3, padding='same',
                                        kernel_initializer=keras.initializers.Constant(value=0),
@@ -87,8 +89,26 @@ class SubNet(keras.Model):
             y = self.box_conv3(y)
             y = layers.ReLU()(y)
             y = self.box_conv4(y)
-            y = layers.ReLU(y)
+            y = layers.ReLU()(y)
+            y = self.box_out(y)
 
             results.append([x, y])
 
         return results
+
+
+if __name__ == '__main__':
+    resnet_50 = ResNet(50)
+    inputs = keras.Input(shape=(416, 416, 3))
+    c2, c3, c4, c5 = resnet_50(inputs)
+    p3, p4, p5, p6, p7 = FPN()([c2, c3, c4, c5])
+
+    # 42,402,172 params
+    subnet = SubNet(out_channels=512,
+                    num_classes=6,
+                    num_anchors=6)
+
+    results = subnet([p3, p4, p5, p6, p7])
+
+    retinanet = keras.Model(inputs, results)
+    retinanet.summary()
