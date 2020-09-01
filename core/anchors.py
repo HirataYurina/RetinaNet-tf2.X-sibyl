@@ -29,7 +29,7 @@ class Anchors(object):
         """Generate anchors for predictions at each level.
 
         Args:
-            img_shape: shape of input img
+            img_shape: shape of input img [h, w]
 
         Returns:
             anchors: a list of anchors for different level
@@ -42,13 +42,14 @@ class Anchors(object):
         anchors = []
 
         for level in range(levels):
-            stride = self.srides[level]
+            stride = self.strides[level]
             size = self.sizes[level]
             # (3, 3)
             ratios_level, scales_level = tf.meshgrid(self.ratios, self.scales)
-            w_level = tf.sqrt(tf.square(size) / ratios_level)
-            w_level = tf.reshape(w_level * scales_level, shape=(num_anchors, 1))
-            h_level = tf.reshape(w_level * ratios_level, shape=(num_anchors, 1))
+            w_level = tf.sqrt(tf.cast(tf.square(size), dtype='float32') / ratios_level)
+            w_level_3_3 = w_level * scales_level
+            w_level = tf.reshape(w_level_3_3, shape=(num_anchors, 1))
+            h_level = tf.reshape(w_level_3_3 * ratios_level, shape=(num_anchors, 1))
             # (9, 2)
             wh_level = tf.concat([w_level, h_level], axis=-1)
             # centers of each anchor
@@ -57,7 +58,8 @@ class Anchors(object):
             grid_xy = tf.meshgrid(tf.range(grid_width), tf.range(grid_height))
             grid_xy = tf.stack(grid_xy, axis=-1)
             # (h, w, 1, 2)
-            anchor_centers = tf.expand_dims((grid_xy + 0.5) * stride, axis=2)
+            grid_xy = tf.cast(grid_xy, dtype='float32')
+            anchor_centers = tf.expand_dims((grid_xy + 0.5) * tf.cast(stride, dtype='float32'), axis=2)
             # tf.concat does not support broadcast, so we need to change shape of
             # wh_level and anchor_centers.
             # (9, 2) --> (h, w, 9, 2)
@@ -70,6 +72,17 @@ class Anchors(object):
         return anchors
 
     def anchors_target_total(self, anchors, gt_boxes, num_classes):
+        """Generate ground truth
+
+        Args:
+            anchors:     shape like (13, 13, 3, 4)
+            gt_boxes:    (n, 4)
+            num_classes:  a scalar
+
+        Returns:
+            results
+
+        """
 
         results = []
 
@@ -132,3 +145,10 @@ class Anchors(object):
         box_weights = tf.tensor_scatter_nd_update(box_weights, pos_index, tf.ones(shape=(num_positive,)))
 
         return labels, delta, label_weights, box_weights
+
+
+if __name__ == '__main__':
+    anchors = Anchors()
+
+    anchors_generated = anchors.anchors_generator(img_shape=(416, 416))
+    print(anchors_generated)
