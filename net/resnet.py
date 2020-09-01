@@ -226,7 +226,7 @@ if __name__ == '__main__':
     # resnet50: 23,508,032 params
     # resnet101: 41,382,976 params
     # -------------------------- #
-    resnet_50 = ResNet(101)
+    resnet_50 = ResNet(50)
     inputs_ = keras.Input(shape=(608, 608, 3))
     c2_, c3_, c4_, c5_ = resnet_50(inputs_)
 
