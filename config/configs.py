@@ -5,11 +5,13 @@
 # filename:configs.py
 # software: PyCharm
 
+from easydict import EasyDict
 
-class Config:
+config = EasyDict()
 
-    lr1 = 0.001
-    batch_size = 32
-    decay_mode = 'cosine_anneal'
-    lr2 = 0.0001
-    warmup_steps = 0
+config.TRAIN = EasyDict()
+config.TRAIN.LR1 = 0.001
+config.TRAIN.LR2 = 0.0001
+config.TRAIN.BATCH_SIZE1 = 32
+config.TRAIN.BATCH_SIZE2 = 4
+config.TRAIN.DECAY_MODE = 'cosine anneal'
