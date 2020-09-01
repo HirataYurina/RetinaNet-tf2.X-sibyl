@@ -7,7 +7,7 @@
 
 import tensorflow as tf
 import tensorflow.keras as keras
-from config.configs import Config
+from config.configs import config
 from retinanet import RetinaNet
 from core.loss import smooth_l1, focal_loss
 
