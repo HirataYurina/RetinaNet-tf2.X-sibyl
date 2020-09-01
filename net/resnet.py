@@ -57,7 +57,8 @@ class _ResBlock(keras.Model):
         x = self.conv3(x)
         # specify training or not training when you are using bn layer
         x = self.bn3(x)
-        x = layers.ReLU()(x)
+        # don't compress outputs before add operation.
+        # x = layers.ReLU()(x)
 
         if self.downsample:
             y = self.conv4(inputs)
@@ -73,6 +74,31 @@ class _ResBlock(keras.Model):
 
 
 class ResNet(keras.Model):
+    """ResNet
+    Deep Residual Learning for Image Recognition
+    https://arxiv.org/pdf/1512.03385.pdf
+
+                                  x ------------------
+                                  |                  |
+                                  |                  |
+                                  V                  |
+                          -----------------          |
+                          |  weight layer |          |
+                          -----------------          |
+                                  |                  |
+                                  | Relu             |
+                                  V                  |
+                          -----------------          |
+                          |  weight layer |          |
+                          -----------------          |
+                  f(x)            |                  |
+                                  V                  |
+                  f(x) + x        +  <----------------
+                                  |
+                                  V
+                                 Relu   So, we don't compress outputs before add operation.
+
+    """
 
     def __init__(self, depth, **kwargs):
         super(ResNet, self).__init__(**kwargs)
@@ -197,16 +223,17 @@ if __name__ == '__main__':
 
     # -------------------------- #
     # test resnet
+    # resnet50: 23,508,032 params
+    # resnet101: 41,382,976 params
     # -------------------------- #
-    resnet_50 = ResNet(50)
-    inputs = keras.Input(shape=(608, 608, 3))
-    c2_, c3_, c4_, c5_ = resnet_50(inputs)
+    resnet_50 = ResNet(101)
+    inputs_ = keras.Input(shape=(608, 608, 3))
+    c2_, c3_, c4_, c5_ = resnet_50(inputs_)
 
-    model = keras.Model(inputs, [c2_, c3_, c4_, c5_])
+    model = keras.Model(inputs_, [c2_, c3_, c4_, c5_])
 
     model.summary()
 
     # weights_path = r'E:\pretrained-model\resnet50_coco_best_v2.1.0.h5'
     # model.load_weights(weights_path, by_name=True)
     # print('load weights successfully!')
-
