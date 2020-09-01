@@ -37,7 +37,24 @@ def smooth_l1(predictions, delta, box_weights, sigma=3):
 
 
 def focal_loss(y_true, y_pred, label_weights, gamma=2, alpha=0.25):
-    """alpha * (1 - p) ** gamma * log(p)"""
+    """ Use focal loss to solve the problem of negative loss overwhelms positive loss.
+    But, focal loss also has some disadvantages that it only considers problem of classification but
+    does not consider problem of location regression.
+    Location regression is very important in object detection task.
+    For example, boxes iou is a key factor of mAp metric.
+
+    focal loss = alpha * (1 - p) ** gamma * log(p)
+
+    Args:
+        y_true:         ground truth
+        y_pred:         network prediction
+        label_weights:  ignored objects do not join in loss computation
+        gamma:          2 is best in paper
+        alpha:          0.25 is best in paper
+
+    Returns:
+
+    """
 
     alpha = alpha * y_true + (1 - alpha) * (1 - y_true)
     pt = y_true * y_pred + (1 - y_true) * (1 - y_pred)
