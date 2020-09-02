@@ -15,3 +15,11 @@ config.TRAIN.LR2 = 0.0001
 config.TRAIN.BATCH_SIZE1 = 32
 config.TRAIN.BATCH_SIZE2 = 4
 config.TRAIN.DECAY_MODE = 'cosine anneal'
+config.TRAIN.POSITIVE_THRES = 0.5
+config.TRAIN.NEGATIVE_THRES = 0.4
+
+config.AUG = EasyDict()
+config.AUG.MAX_BOXES = 40
+
+config.DETECT = EasyDict()
+config.DETECT.mAP_THRES = 0.5

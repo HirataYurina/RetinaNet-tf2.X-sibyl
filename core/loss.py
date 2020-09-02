@@ -62,3 +62,31 @@ def focal_loss(y_true, y_pred, label_weights, gamma=2, alpha=0.25):
     cross_entropy = tf.nn.sigmoid_cross_entropy_with_logits(y_true, y_pred)
 
     return label_weights * alpha * factor * cross_entropy
+
+
+def retina_loss(y_pred, y_true, batch_size):
+
+    batch_float = tf.cast(batch_size, tf.float32)
+    # 5 stages and n batch
+    num_stages = len(y_pred)
+
+    loss = 0
+
+    for i in range(num_stages):
+        y_pred_stage = y_pred[i]
+        y_true_stage = y_true[i]
+
+        for j in range(batch_size):
+            y_pred_batch = y_pred_stage[j]
+            y_true_batch = y_true_stage[j]
+            class_pred = y_pred_batch[0]
+            box_pred = y_pred_batch[1]
+            labels = y_true_batch[0]
+            delta = y_true_batch[1]
+            labels_weights = y_true_batch[2]
+            box_weights = y_true_batch[3]
+            box_loss = smooth_l1(box_pred, delta, box_weights) / batch_float
+            class_loss = focal_loss(labels, class_pred, labels_weights) / batch_float
+            loss = loss + box_loss + class_loss
+
+    return loss

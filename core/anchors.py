@@ -7,6 +7,8 @@
 
 import tensorflow as tf
 from util.utils import compute_ious, trim_zeros, box2delta
+import numpy as np
+from config.configs import config
 
 
 class Anchors(object):
@@ -19,8 +21,8 @@ class Anchors(object):
                 'target_stds': [0.1, 0.1, 0.2, 0.2]}
 
     def __init__(self,
-                 positive_threshold=0.5,
-                 negative_threshold=0.4):
+                 positive_threshold=config.TRAIN.POSITIVE_THRES,
+                 negative_threshold=config.TRAIN.NEGATIVE_THRES):
         self.__dict__.update(self._default)
         self.positive_thres = positive_threshold
         self.negative_thres = negative_threshold
@@ -95,6 +97,8 @@ class Anchors(object):
 
     def _anchors_target_level(self, anchors_level, gt_boxes, num_classes):
 
+        gt_boxes = tf.cast(gt_boxes, tf.float32)
+
         anchors_left = anchors_level[..., :2] - anchors_level[..., 2:] / 2
         anchors_right = anchors_level[..., :2] + anchors_level[..., 2:] / 2
         anchors = tf.concat([anchors_left, anchors_right], axis=-1)
@@ -102,7 +106,7 @@ class Anchors(object):
         # 1.discard invalid gt boxes.
         valid_gt = trim_zeros(gt_boxes)
         ious = compute_ious(anchors, valid_gt[..., 0:4])
-        gt_class = valid_gt[..., 4]
+        gt_class = tf.cast(valid_gt[..., 4], tf.int64)
 
         # (h, w, 9)
         ious_max = tf.reduce_max(ious, axis=-1)
@@ -151,4 +155,11 @@ if __name__ == '__main__':
     anchors = Anchors()
 
     anchors_generated = anchors.anchors_generator(img_shape=(416, 416))
-    print(anchors_generated)
+    # print(anchors_generated)
+
+    # read ground truth from 2088_trainval.txt
+    with open('../datas/2088_trainval.txt') as f:
+        gt = f.readline()
+        boxes = np.array([np.array(list(map(int, box.split(',')))) for box in gt.split()[1:]])
+
+    results = anchors.anchors_target_total(anchors_generated, boxes, 6)

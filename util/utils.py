@@ -33,7 +33,7 @@ def compute_ious(boxes1, boxes2):
     inter_min = tf.maximum(boxes1_min, boxes2_min)
     inter_max = tf.minimum(boxes1_max, boxes2_max)
     inter_wh = inter_max - inter_min
-    inter_wh = tf.maximum(0, inter_wh)
+    inter_wh = tf.maximum(0.0, inter_wh)
     inter_area = inter_wh[..., 0] * inter_wh[..., 1]
 
     ious = inter_area / (boxes1_area + boxes2_area - inter_area)
@@ -70,7 +70,7 @@ def box2delta(anchors, gt_boxes, means, std):
     gt_w = gt_boxes[..., 2]
     gt_h = gt_boxes[..., 3]
 
-    dx = (gt_x - anchors_x) / anchors_w
+    dx = (gt_x - anchors_x) / anchors_w  # anchors_w always bigger than 0
     dy = (gt_y - anchors_y) / anchors_h
     dw = tf.math.log(gt_w / anchors_w)
     dh = tf.math.log(gt_h / anchors_h)
