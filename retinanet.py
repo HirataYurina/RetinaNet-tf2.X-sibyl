@@ -13,14 +13,29 @@ from net.subnet import SubNet
 
 class RetinaNet(keras.Model):
     
-    def __init__(self):
+    def __init__(self,
+                 out_channels,
+                 num_anchors,
+                 num_classes):
         super(RetinaNet, self).__init__()
 
         self.resnet = ResNet(50)
         self.fpn = FPN()
-        self.subnet = SubNet(out_channels=256,
-                             num_anchors=9,
-                             num_classes=6)
+        self.subnet = SubNet(out_channels=out_channels,
+                             num_anchors=num_anchors,
+                             num_classes=num_classes)
 
-    def call(self, inputs, training=None, mask=None):
-        pass
+    def __call__(self, inputs, training=False, mask=None):
+        x = self.resnet(inputs, training=training)
+        x = self.fpn(x)
+        x = self.subnet(x)
+
+        return x
+
+
+if __name__ == '__main__':
+    inputs = keras.Input(shape=(416, 416, 3))
+    retina_model = RetinaNet()
+    outputs = retina_model(inputs)
+    model = keras.Model(inputs, outputs)
+    print(len(model.layers))

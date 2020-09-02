@@ -6,7 +6,7 @@
 # software: PyCharm
 
 import tensorflow as tf
-from dataset.augmnet import get_random_data
+from dataset.augment import get_random_data
 from core.anchors import Anchors
 import numpy as np
 

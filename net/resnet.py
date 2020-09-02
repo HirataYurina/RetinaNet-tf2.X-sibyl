@@ -232,7 +232,7 @@ if __name__ == '__main__':
 
     model = keras.Model(inputs_, [c2_, c3_, c4_, c5_])
 
-    model.summary()
+    print(len(model.layers))
 
     # weights_path = r'E:\pretrained-model\resnet50_coco_best_v2.1.0.h5'
     # model.load_weights(weights_path, by_name=True)

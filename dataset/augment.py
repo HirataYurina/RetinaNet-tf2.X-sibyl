@@ -2,7 +2,7 @@
 # author:平手友梨奈ii
 # e-mail:1353593259@qq.com
 # datetime:1993/12/01
-# filename:augmnet.py
+# filename:augment.py
 # software: PyCharm
 
 import numpy as np

@@ -7,6 +7,7 @@
 
 
 import tensorflow as tf
+from config.configs import config
 
 
 def smooth_l1(predictions, delta, box_weights, sigma=3):
@@ -36,7 +37,7 @@ def smooth_l1(predictions, delta, box_weights, sigma=3):
     return tf.multiply(smooth_l1_loss, box_weights)
 
 
-def focal_loss(y_true, y_pred, label_weights, gamma=2, alpha=0.25):
+def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=config.TRAIN.ALPHA):
     """ Use focal loss to solve the problem of negative loss overwhelms positive loss.
     But, focal loss also has some disadvantages that it only considers problem of classification but
     does not consider problem of location regression.
@@ -77,16 +78,19 @@ def retina_loss(y_pred, y_true, batch_size):
         y_true_stage = y_true[i]
 
         for j in range(batch_size):
-            y_pred_batch = y_pred_stage[j]
+            class_pred = y_pred_stage[0]  # [(batch, 52, 52, 9*num_classes), (batch, 52, 52, 9*4)][0]
+            box_pred = y_pred_stage[1]  # (batch, 52, 52, 9*4)
+            class_pred_batch = class_pred[j]
+            box_pred_batch = box_pred[j]
+
             y_true_batch = y_true_stage[j]
-            class_pred = y_pred_batch[0]
-            box_pred = y_pred_batch[1]
             labels = y_true_batch[0]
             delta = y_true_batch[1]
             labels_weights = y_true_batch[2]
             box_weights = y_true_batch[3]
-            box_loss = smooth_l1(box_pred, delta, box_weights) / batch_float
-            class_loss = focal_loss(labels, class_pred, labels_weights) / batch_float
+
+            box_loss = smooth_l1(box_pred_batch, delta, box_weights) / batch_float
+            class_loss = focal_loss(labels, class_pred_batch, labels_weights) / batch_float
             loss = loss + box_loss + class_loss
 
     return loss
