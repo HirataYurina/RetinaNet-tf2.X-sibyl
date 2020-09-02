@@ -29,6 +29,9 @@ def smooth_l1(predictions, delta, box_weights, sigma=3):
         box_loss: the location loss
 
     """
+
+    box_weights = tf.expand_dims(box_weights, -1)
+
     sigma_square = tf.cast(tf.math.square(sigma), tf.float32)
     delta = tf.abs(predictions - delta)
     smooth_l1_loss = tf.where(tf.greater_equal(delta, 1 / sigma_square),
@@ -57,6 +60,8 @@ def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=co
 
     """
 
+    label_weights = tf.expand_dims(label_weights, axis=-1)
+
     alpha = alpha * y_true + (1 - alpha) * (1 - y_true)
     pt = y_true * y_pred + (1 - y_true) * (1 - y_pred)
     factor = tf.pow(x=(1 - pt), y=gamma)
@@ -80,6 +85,11 @@ def retina_loss(y_pred, y_true, batch_size):
         for j in range(batch_size):
             class_pred = y_pred_stage[0]  # [(batch, 52, 52, 9*num_classes), (batch, 52, 52, 9*4)][0]
             box_pred = y_pred_stage[1]  # (batch, 52, 52, 9*4)
+            pred_shape = tf.shape(class_pred)
+            h = pred_shape[1]
+            w = pred_shape[2]
+            class_pred = tf.reshape(class_pred, shape=(batch_size, h, w, 9, -1))
+            box_pred = tf.reshape(box_pred, shape=(batch_size, h, w, 9, -1))
             class_pred_batch = class_pred[j]
             box_pred_batch = box_pred[j]
 
@@ -89,8 +99,8 @@ def retina_loss(y_pred, y_true, batch_size):
             labels_weights = y_true_batch[2]
             box_weights = y_true_batch[3]
 
-            box_loss = smooth_l1(box_pred_batch, delta, box_weights) / batch_float
-            class_loss = focal_loss(labels, class_pred_batch, labels_weights) / batch_float
+            box_loss = tf.reduce_sum(smooth_l1(box_pred_batch, delta, box_weights)) / batch_float
+            class_loss = tf.reduce_sum(focal_loss(labels, class_pred_batch, labels_weights)) / batch_float
             loss = loss + box_loss + class_loss
 
     return loss

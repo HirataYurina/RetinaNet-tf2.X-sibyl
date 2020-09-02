@@ -87,9 +87,9 @@ def box2delta(anchors, gt_boxes, means, std):
 if __name__ == '__main__':
 
     # test <trim_zeros>
-    gt_boxes_ = tf.constant([[1, 1, 1, 1],
+    gt_boxes_ = tf.constant([[0, 0, 0, 0],
                             [0, 0, 0, 0],
-                            [2, 2, 2, 2],
+                            [0, 0, 0, 0],
                             [0, 0, 0, 0]])
     valid_gt_ = trim_zeros(gt_boxes_)
-    print(valid_gt_)
+    print(len(valid_gt_))

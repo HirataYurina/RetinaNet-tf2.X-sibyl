@@ -35,7 +35,7 @@ class RetinaNet(keras.Model):
 
 if __name__ == '__main__':
     inputs = keras.Input(shape=(416, 416, 3))
-    retina_model = RetinaNet()
+    retina_model = RetinaNet(256, 9, 6)
     outputs = retina_model(inputs)
-    model = keras.Model(inputs, outputs)
-    print(len(model.layers))
+    # model = keras.Model(inputs, outputs)
+    print(len(retina_model.layers))

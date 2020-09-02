@@ -17,7 +17,7 @@ config.MODEL.NUM_CLASSES = 6
 config.TRAIN = EasyDict()
 config.TRAIN.LR1 = 0.001
 config.TRAIN.LR2 = 0.0001
-config.TRAIN.BATCH_SIZE1 = 32
+config.TRAIN.BATCH_SIZE1 = 8
 config.TRAIN.BATCH_SIZE2 = 4
 config.TRAIN.EPOCH1 = 50
 config.TRAIN.EPOCH2 = 100  # train longer if you need
@@ -30,9 +30,9 @@ config.TRAIN.FREEZE = 174
 config.TRAIN.INPUT_SHAPE = (416, 416)
 config.TRAIN.SAVE_INTERVAL = 5
 
-config.TRAIN.TRAIN_TXT = ''
-config.TRAIN.TEST_TXT = ''
-config.TRAIN.CLASS_TXT = ''
+config.TRAIN.TRAIN_TXT = './datas/2088_trainval.txt'
+config.TRAIN.TEST_TXT = './datas/2088_test.txt'
+config.TRAIN.CLASS_TXT = './datas/danger_source_classes.txt'
 config.TRAIN.SAVE_PATH = './logs/first/'
 config.TRAIN.DIARY_PATH = './diary/training.log'
 

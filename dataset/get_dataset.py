@@ -60,11 +60,6 @@ class DataGenerator:
                 i = (i + 1) % n
 
             image_data = tf.cast(image_data, tf.float32)
-            targets_3 = tf.stack(targets_3, axis=0)
-            targets_4 = tf.stack(targets_4, axis=0)
-            targets_5 = tf.stack(targets_5, axis=0)
-            targets_6 = tf.stack(targets_6, axis=0)
-            targets_7 = tf.stack(targets_7, axis=0)
 
             yield [image_data, targets_3, targets_4, targets_5, targets_6, targets_7]
 

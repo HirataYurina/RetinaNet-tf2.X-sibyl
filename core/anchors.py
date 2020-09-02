@@ -9,6 +9,7 @@ import tensorflow as tf
 from util.utils import compute_ious, trim_zeros, box2delta
 import numpy as np
 from config.configs import config
+import math
 
 
 class Anchors(object):
@@ -55,8 +56,8 @@ class Anchors(object):
             # (9, 2)
             wh_level = tf.concat([w_level, h_level], axis=-1)
             # centers of each anchor
-            grid_height = height // stride
-            grid_width = width // stride
+            grid_height = math.ceil(height / stride)
+            grid_width = math.ceil(width / stride)
             grid_xy = tf.meshgrid(tf.range(grid_width), tf.range(grid_height))
             grid_xy = tf.stack(grid_xy, axis=-1)
             # (h, w, 1, 2)
@@ -102,19 +103,23 @@ class Anchors(object):
         anchors_left = anchors_level[..., :2] - anchors_level[..., 2:] / 2
         anchors_right = anchors_level[..., :2] + anchors_level[..., 2:] / 2
         anchors = tf.concat([anchors_left, anchors_right], axis=-1)
+        anchors_shape = tf.shape(anchors_level)
+        height, width, num_anchors, _ = anchors_shape
+        labels = tf.zeros(shape=(height, width, num_anchors, num_classes))
 
         # 1.discard invalid gt boxes.
         valid_gt = trim_zeros(gt_boxes)
+
+        if len(valid_gt) == 0:
+            return labels, tf.zeros_like(anchors_level), \
+                   tf.zeros(shape=(height, width, num_anchors)), tf.zeros(shape=(height, width, num_anchors))
+
         ious = compute_ious(anchors, valid_gt[..., 0:4])
         gt_class = tf.cast(valid_gt[..., 4], tf.int64)
 
         # (h, w, 9)
         ious_max = tf.reduce_max(ious, axis=-1)
         ious_argmax = tf.argmax(ious, axis=-1)
-
-        anchors_shape = tf.shape(anchors_level)
-        height, width, num_anchors, _ = anchors_shape
-        labels = tf.zeros(shape=(height, width, num_anchors, num_classes))
 
         # 2.if max iou > positive threshold, anchors are assigned to ground truth.
         # (num_pos, 3)

@@ -1,0 +1,548 @@
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_2728.jpg 16,1,163,277,2 399,260,497,422,0 578,81,626,166,0 590,1,695,155,2 165,1,189,102,1 186,1,227,110,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_461.jpg 375,276,422,359,0 433,253,472,324,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1038.jpg 212,124,476,394,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_327.jpg 255,478,369,836,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_505.jpg 60,301,319,551,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_7627.jpg 147,40,213,186,1 112,506,186,700,1 95,110,232,700,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_629.jpg 417,383,481,520,0 536,324,576,410,0 580,169,716,514,1 156,200,287,552,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第六分司_15.jpg 203,247,321,632,3 204,86,238,243,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_228.jpg 227,407,339,579,0 457,238,498,309,0 246,226,282,284,0 5,222,39,273,0 1,135,47,244,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_82.jpg 331,6,418,448,3 489,120,621,475,2 406,139,516,475,2 220,159,326,460,2 44,95,180,475,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第二分司_30.jpg 409,218,456,291,1 428,434,466,556,1 430,283,473,545,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_3937.jpg 133,291,214,418,0 158,219,201,294,0 64,121,121,315,1 234,125,278,247,1 289,137,379,241,1 333,1,436,241,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5589.jpg 62,349,168,473,1 180,287,264,475,1 368,4,507,546,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1493.jpg 281,636,416,894,0 703,641,824,865,0 923,616,1021,809,0 983,589,1071,751,0 35,347,171,596,3 353,268,532,428,3 344,354,498,821,2 492,347,618,774,2 630,334,743,748,2 779,320,916,722,2 911,336,995,660,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2927.jpg 58,362,124,478,0 393,267,431,347,0 418,307,474,409,0 265,138,371,343,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3847.jpg 329,407,425,743,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_5355.jpg 253,353,362,541,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_1678.jpg 197,105,327,360,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_642.jpg 51,238,120,347,0 407,264,514,436,0 232,48,355,399,1 326,249,427,343,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2067.jpg 46,1,574,751,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2580.jpg 254,386,404,843,3 292,325,377,575,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1293.jpg 289,154,460,481,1 481,513,674,960,1 430,3,692,960,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_8101.jpg 130,103,521,996,3 353,594,587,1000,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1611.jpg 203,1,633,590,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2096.jpg 122,297,183,400,0 214,107,301,300,1 575,196,670,286,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5209.jpg 293,237,606,1057,3 313,40,518,638,1 140,381,397,1026,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_582.jpg 309,556,502,893,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_107.jpg 164,4,256,134,2 220,103,316,291,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2303.jpg 475,344,489,380,0 291,532,392,696,0 26,276,108,461,1 201,53,261,210,1 206,295,256,421,1 222,152,281,365,3 240,244,399,333,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第十分司_1517.jpg 94,290,257,483,2 426,1,551,374,2 730,320,859,519,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_210.jpg 24,116,99,214,0 240,152,318,268,0 100,251,297,441,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1268.jpg 37,365,85,432,0 150,404,211,491,0 327,501,416,631,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3556.jpg 441,69,724,1223,3 535,69,707,578,1 141,701,303,1078,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第十一分司_821.jpg 1,131,55,297,3 56,317,133,427,1 133,27,166,132,1 92,63,172,427,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_187.jpg 313,119,507,569,1 317,263,633,1067,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_2794.jpg 111,219,188,356,0 390,222,464,359,0 455,183,516,292,0 400,162,450,252,0 157,146,195,218,0 236,50,275,152,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_17.jpg 144,124,307,478,2 341,122,532,480,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_1223.jpg 1,149,349,223,4 17,225,392,354,4 78,322,296,387,4 6,376,372,468,4 1,485,333,578,4 155,549,375,659,4 10,613,391,700,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1471.jpg 231,448,328,740,1 351,444,512,780,1 330,308,409,731,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_101.jpg 170,168,256,373,1 56,893,155,1030,0 31,643,133,920,1 74,360,202,711,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_141.jpg 490,897,618,1079,0 381,674,519,969,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2804.jpg 137,352,281,658,1 187,169,319,446,1 164,9,393,658,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第一分司_135.jpg 163,377,248,875,4 512,304,675,944,4 207,358,387,866,4 399,429,570,879,4 285,474,464,842,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_6103.jpg 111,435,160,526,0 507,426,540,507,0 158,387,249,538,2 209,285,277,493,2 421,276,502,536,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_940.jpg 13,358,124,544,0 205,351,322,470,1 337,160,455,406,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_279.jpg 128,1,351,359,3 363,272,392,335,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_401.jpg 342,70,536,640,2 1,592,442,1040,2 194,363,543,1039,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1721.jpg 360,145,718,1031,3 393,119,500,416,1 357,680,601,1032,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_7429.jpg 529,516,651,675,0 897,366,981,467,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1229.jpg 329,432,492,692,0 654,481,831,794,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1443.jpg 322,4,436,690,3 321,44,385,221,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_4048.jpg 9,475,88,582,0 157,345,220,443,0 805,282,848,355,0 851,124,1040,578,1 197,216,262,343,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第十分司_950.jpg 696,89,814,340,0 191,353,376,726,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第五分司_358.jpg 736,4,916,394,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_701.jpg 156,148,219,228,2 275,259,353,469,1 121,248,191,410,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_30.jpg 106,28,260,421,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1962.jpg 329,164,392,284,1 337,220,467,528,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_4047.jpg 368,450,464,569,2 248,542,304,615,0 111,538,156,604,0 107,503,142,568,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1296.jpg 106,26,364,681,3 133,49,232,270,2 341,396,410,700,2 256,427,349,634,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_4705.jpg 248,172,349,529,3 252,103,305,215,1 303,366,381,529,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1117.jpg 403,54,761,777,3 355,216,693,616,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_91.jpg 6,1,313,659,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_3244.jpg 34,856,168,1058,0 121,692,215,842,0 216,609,290,706,0 457,368,562,668,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_2325.jpg 494,465,597,604,0 619,516,741,725,0 632,679,804,969,0 1501,635,1657,881,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1063.jpg 199,81,534,1033,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_344.jpg 295,488,375,658,1 244,151,329,328,1 266,297,354,659,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_692.jpg 154,1,406,575,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4073.jpg 6,1,382,864,3 110,170,463,846,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_3691.jpg 1,105,311,1114,1 354,15,717,1278,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_6213.jpg 173,816,571,1333,3 358,452,571,1083,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_2536.jpg 266,280,392,481,0 134,1,326,259,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_631.jpg 584,310,661,439,0 746,467,908,728,0 759,219,980,533,1 851,95,970,289,1 952,108,1031,452,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第五分司_360.jpg 413,152,748,722,2 518,329,801,780,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5725.jpg 488,27,579,207,1 333,380,450,601,1 365,143,535,610,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_4308.jpg 394,177,544,497,1 270,897,386,1040,1 366,254,526,1038,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_462.jpg 229,15,446,975,3 279,248,422,516,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_3337.jpg 79,294,291,698,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_792.jpg 90,7,263,266,1 201,258,334,583,1 135,210,264,577,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_4536.jpg 107,239,483,631,3 439,250,584,500,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十六分司_73.jpg 74,231,335,722,2 258,1,635,811,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_5067.jpg 345,347,488,600,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2088.jpg 84,122,421,953,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十一分司_1114.jpg 355,164,410,318,1 341,153,409,590,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1191.jpg 18,1,171,418,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_7469.jpg 492,522,941,1918,3 655,5,1078,650,2 851,140,1422,761,2 920,681,1422,1423,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_211.jpg 523,293,759,1423,3 596,1014,779,1423,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3228.jpg 1,298,799,369,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_4994.jpg 267,198,332,325,0 75,49,217,405,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2862.jpg 16,213,82,345,0 216,126,308,222,1 438,36,535,253,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_3951.jpg 228,181,369,480,3 325,96,402,226,1 206,363,290,479,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_3494.jpg 357,120,766,1068,3 452,570,556,954,1 108,595,197,821,1 302,142,389,398,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5703.jpg 287,283,575,994,3 298,178,436,623,1 108,643,365,1000,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_5998.jpg 87,402,239,628,0 188,86,340,312,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2114.jpg 112,1,342,658,3 184,231,415,648,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_960.jpg 270,571,346,700,0 142,361,199,598,1 223,368,282,607,1 223,44,297,233,1 182,148,287,590,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2545.jpg 431,457,634,673,1 626,337,712,465,0 309,668,490,976,0 427,324,479,414,0 220,320,273,407,0 1,318,50,417,0 1,463,53,587,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_1159.jpg 47,123,424,771,2 472,37,562,333,1 676,361,800,591,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_3120.jpg 219,218,455,335,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2950.jpg 161,166,374,227,5 97,195,343,261,5 164,246,429,316,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4833.jpg 287,36,478,940,3 336,494,529,957,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2750.jpg 1,222,800,465,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1055.jpg 330,323,399,425,0 1,305,37,390,0 310,185,341,266,1 331,181,359,254,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_4885.jpg 1,312,404,980,3 66,527,266,1017,1 54,87,175,469,1 399,556,561,886,1 551,582,720,926,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_190.jpg 62,141,299,488,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_6402.jpg 298,37,535,982,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7190.jpg 433,135,553,411,3 164,217,270,518,1 228,317,330,526,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_433.jpg 356,304,448,505,2 360,288,392,369,2 316,284,335,343,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6969.jpg 27,140,311,700,3 197,124,275,342,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3499.jpg 330,188,375,337,1 374,559,437,756,1 322,155,405,762,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_6040.jpg 110,281,149,332,0 261,362,322,462,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_4406.jpg 401,110,509,334,3 203,412,253,477,0 13,509,125,687,0 2,667,161,964,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5519.jpg 104,175,130,246,2 132,173,162,244,2 243,159,282,264,2 448,182,491,255,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_4547.jpg 136,426,529,1017,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_286.jpg 333,96,433,348,1 424,619,567,956,1 342,257,510,938,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6616.jpg 349,35,425,356,5 406,61,556,412,5 475,83,657,411,5 613,113,711,350,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6206.jpg 165,530,379,966,1 334,1,480,427,1 214,363,616,1051,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第十五分司_483.jpg 121,128,463,855,3 190,210,547,687,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第六分司_7.jpg 132,124,192,266,1 226,467,296,536,1 154,220,250,533,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4906.jpg 406,5,692,944,3 230,309,384,836,3 321,131,405,380,1 261,48,327,238,1 176,513,325,851,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2652.jpg 461,639,638,1067,1 350,135,461,402,1 374,311,578,1067,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7642.jpg 374,162,420,259,1 468,376,515,498,1 367,171,527,493,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_2809.jpg 47,431,291,819,0 376,66,508,328,0 532,256,695,561,0 606,1,768,223,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5592.jpg 348,386,530,600,3 358,140,525,522,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_4554.jpg 359,204,435,300,1 294,488,352,598,1 326,169,404,592,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_2726.jpg 556,494,573,522,0 221,480,238,506,0 287,409,340,558,1 358,413,401,549,2 393,426,420,546,2 434,424,468,550,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第二分司_334.jpg 110,70,246,474,1 314,113,384,341,2 383,118,469,367,2 488,131,593,425,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_1093.jpg 179,454,189,473,0 193,480,216,515,0 212,498,243,552,0 356,428,424,596,1 212,407,235,445,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_508.jpg 307,281,488,891,3 312,298,360,445,1 438,738,478,893,1 324,744,359,814,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1781.jpg 1,201,472,637,3 115,87,139,149,1 98,89,115,145,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7544.jpg 169,139,217,204,0 314,179,354,237,0 414,208,454,265,0 451,243,498,308,0 496,285,549,368,0 543,342,607,430,0 449,348,517,448,0 253,330,336,444,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_100.jpg 114,18,320,587,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_342.jpg 164,230,347,505,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十一分司_2144.jpg 225,1,456,319,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_250.jpg 153,36,394,578,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_8354.jpg 268,86,339,310,1 171,453,289,799,1 147,5,382,790,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_1379.jpg 338,202,442,506,1 220,632,388,1064,1 273,419,426,1059,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_826.jpg 159,139,313,387,1 266,592,496,700,1 178,286,288,696,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1638.jpg 203,119,290,357,1 138,1,419,711,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_137.jpg 116,100,221,579,3 139,165,208,304,1 140,417,215,609,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第四分司_1450.jpg 164,294,237,401,0 120,202,163,256,0 140,183,164,225,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5315.jpg 335,1,684,572,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_1574.jpg 127,227,157,283,0 372,197,463,356,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4477.jpg 346,115,461,635,3 362,223,428,377,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十五分司_19.jpg 152,141,348,759,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第一分司_94.jpg 100,204,182,325,2 148,139,168,197,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_107.jpg 1,279,195,798,1 175,296,220,486,1 346,323,381,426,3 440,380,486,457,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_4165.jpg 256,231,318,316,0 229,47,317,231,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1597.jpg 350,315,505,570,1 362,449,524,590,3 557,440,745,590,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_6401.jpg 240,69,671,1068,3 290,411,474,929,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3227.jpg 214,70,686,954,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2524.jpg 67,196,403,800,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_4285.jpg 310,359,396,529,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_4205.jpg 377,277,422,347,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_6851.jpg 145,316,288,588,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_946.jpg 1,167,101,553,2 242,364,425,625,2 339,272,406,383,2 271,176,319,333,1 265,324,383,417,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_51.jpg 376,170,485,350,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_815.jpg 179,408,205,458,0 117,433,163,516,0 31,545,134,702,0 506,624,584,751,0 176,230,424,414,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_2947.jpg 233,361,319,500,0 574,309,648,408,0 916,202,936,230,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_3759.jpg 118,343,286,700,3 155,1,352,399,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十五分司_265.jpg 66,1,360,741,3 405,262,560,759,2 503,261,619,646,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_343.jpg 239,211,385,688,3 298,407,449,704,2 225,82,306,314,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_4873.jpg 210,191,639,389,3 205,316,297,444,0 63,246,120,327,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_439.jpg 1,644,195,1037,0 17,348,411,857,2 17,1,381,385,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_952.jpg 276,84,515,1055,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_349.jpg 152,93,583,720,2 561,89,919,720,2 857,112,995,720,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_333.jpg 592,457,741,688,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_2057.jpg 328,353,706,581,3 166,577,204,659,0 180,606,239,705,0 356,692,459,876,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4832.jpg 305,67,497,1066,3 304,144,397,407,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7980.jpg 396,45,470,268,1 543,484,709,888,3 308,194,462,1024,3 324,684,460,1020,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1295.jpg 145,48,225,263,2 153,347,255,623,2 143,12,251,610,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_641.jpg 644,1,809,536,3 720,274,933,579,1 782,170,868,284,1 374,128,476,552,1 482,168,699,638,1 600,610,695,733,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_1347.jpg 1,154,310,525,2 309,86,519,527,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_1473.jpg 420,1,728,178,3 271,543,392,768,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_1247.jpg 134,250,258,460,0 374,563,588,925,0 281,1,509,513,1 146,1,277,249,1 673,3,800,326,1 665,341,762,392,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6540.jpg 230,153,407,404,1 223,407,416,727,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2569.jpg 299,393,512,988,1 387,962,697,1288,1 343,566,553,1288,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_32.jpg 175,765,361,1281,2 278,232,411,569,1 264,85,424,1241,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3340.jpg 321,108,514,926,3 268,636,334,927,1 322,560,424,833,1 415,634,520,956,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_997.jpg 20,187,265,497,2 337,1,652,362,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第十分司_273.jpg 388,366,411,409,0 278,534,389,700,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_4352.jpg 350,309,503,600,3 421,113,618,434,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_7117.jpg 234,150,336,326,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6623.jpg 260,336,370,942,3 183,597,310,949,1 290,199,399,462,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3110.jpg 215,604,476,1067,1 278,151,508,672,1 24,643,192,1064,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_267.jpg 643,378,692,447,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1308.jpg 330,481,646,951,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_332.jpg 9,141,524,528,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6729.jpg 160,315,487,965,1 421,1,640,473,1 210,103,629,1003,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_316.jpg 170,360,358,902,2 304,309,497,937,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_588.jpg 175,278,231,328,2 119,272,139,306,0 40,289,68,338,2 58,362,122,471,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4289.jpg 319,511,799,942,3 672,44,800,416,1 680,103,800,531,1 2,1,274,708,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第五分司_204.jpg 8,166,51,236,0 72,223,152,357,0 170,161,203,230,0 251,197,288,276,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_2699.jpg 3,170,789,566,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_3936.jpg 286,190,367,414,1 322,2,423,400,3 422,211,448,271,1 474,216,491,250,1 585,226,611,281,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1898.jpg 133,383,217,519,0 333,240,348,258,0 495,224,517,251,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6937.jpg 476,414,800,1064,1 274,300,629,1063,3 259,48,483,669,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_1578.jpg 320,171,397,327,2 135,317,219,473,2 292,255,413,396,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_275.jpg 1,402,68,543,0 330,449,438,633,0 263,187,325,352,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_69.jpg 229,264,285,409,1 310,207,408,561,1 586,301,641,395,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第二分司_110.jpg 310,395,452,551,3 523,319,617,676,1 106,347,195,536,1 14,499,249,843,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_1279.jpg 170,494,526,1002,3 235,63,414,506,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7882.jpg 1,354,68,833,2 212,360,335,676,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2478.jpg 142,136,174,228,2 118,313,153,425,2 96,313,125,422,2 137,198,176,414,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3591.jpg 109,2,700,590,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_5338.jpg 144,127,456,393,3 128,192,178,289,1 205,20,353,174,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2424.jpg 373,305,444,431,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_250.jpg 179,82,428,371,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_1225.jpg 121,79,146,131,0 338,98,382,164,0 205,303,309,449,0 433,180,508,277,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_1131.jpg 111,276,173,373,0 283,314,357,438,0 511,349,595,489,0 659,264,713,345,0 737,345,800,476,0 393,120,486,349,2 395,124,438,175,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_16.jpg 51,36,123,230,2 188,62,217,157,2 225,59,252,165,2 254,61,279,182,2 281,49,328,198,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_591.jpg 202,69,340,425,2 152,247,397,640,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6936.jpg 286,4,421,350,1 56,595,261,991,1 1,591,75,1043,1 131,185,392,995,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_458.jpg 144,244,462,606,2 545,643,600,712,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2025.jpg 431,102,563,499,3 463,174,514,304,1 567,453,596,511,0 676,466,714,525,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_6838.jpg 168,213,283,403,0 610,286,733,516,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_4736.jpg 113,135,125,160,0 119,141,137,169,0 287,208,332,277,0 506,285,585,392,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1266.jpg 323,334,691,600,1 53,243,168,597,1 82,130,197,598,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6378.jpg 26,432,86,517,0 342,441,398,515,0 464,439,514,514,0 546,431,602,516,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_2249.jpg 72,237,156,369,0 176,414,325,682,0 156,45,249,320,1 282,26,407,400,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1458.jpg 132,235,519,1044,3 313,441,588,1037,1 236,100,443,408,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_543.jpg 129,413,293,688,1 249,8,363,346,1 190,238,342,688,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第四分司_6279.jpg 513,602,599,825,1 541,213,604,390,1 455,153,615,868,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4333.jpg 415,519,517,780,3 478,413,538,553,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4343.jpg 16,199,800,377,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_457.jpg 198,1,269,159,2 1,262,124,473,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第五分司_44.jpg 221,113,464,689,1 464,148,746,618,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6107.jpg 95,505,206,730,1 455,207,509,403,1 401,77,611,776,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3101.jpg 231,545,430,1052,3 239,236,397,721,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十一分司_2178.jpg 288,340,401,610,2 430,686,614,984,2 540,635,623,882,2 330,541,504,994,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_1327.jpg 242,384,261,413,0 236,419,263,465,0 218,450,262,513,0 188,558,265,671,0 399,541,482,662,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_5796.jpg 133,196,206,305,0 276,206,346,326,0 360,273,476,437,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2877.jpg 501,452,697,1067,3 283,238,404,375,1 369,320,544,389,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_6129.jpg 242,343,514,746,3 218,195,449,563,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2467.jpg 593,635,780,1020,1 349,546,565,860,2 68,366,304,851,2 258,342,409,582,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2325.jpg 349,5,668,779,3 387,251,850,771,1 789,191,1049,777,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3232.jpg 448,321,713,1252,3 445,57,639,421,1 536,732,758,1279,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_809.jpg 242,559,487,1020,3 275,294,428,759,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_55.jpg 243,384,327,790,3 353,681,435,923,1 187,660,272,917,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2494.jpg 66,33,193,583,3 110,357,190,553,1 236,288,620,1328,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6938.jpg 224,5,518,571,1 291,162,660,1068,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_1168.jpg 112,61,186,177,1 291,301,315,346,1 222,299,297,421,1 107,10,253,418,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2851.jpg 329,189,535,494,3 136,118,344,564,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3431.jpg 538,43,756,165,3 230,305,269,359,0 690,346,749,446,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_2280.jpg 301,288,503,896,3 403,336,525,533,1 360,721,503,887,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_1972.jpg 207,199,242,298,1 241,278,270,332,0 304,401,374,534,0 323,118,672,361,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7922.jpg 100,221,187,558,4 188,147,367,641,4 229,133,501,615,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1420.jpg 513,6,631,270,1 29,332,286,780,1 349,4,662,774,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3013.jpg 78,84,895,248,3 882,348,962,479,0 2,348,78,440,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第五分司_534.jpg 37,693,2213,1091,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3779.jpg 45,245,431,1068,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2922.jpg 228,628,428,816,3 250,158,411,634,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_5455.jpg 287,284,334,379,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4907.jpg 1,202,765,466,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_3671.jpg 108,312,204,453,0 528,270,585,365,0 489,202,526,249,0 268,57,407,185,3 173,117,225,263,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_249.jpg 91,96,239,397,2 329,217,428,338,2 259,494,405,700,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2090.jpg 228,234,418,817,3 242,6,394,266,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十五分司_598.jpg 12,43,274,383,2 409,102,830,166,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2598.jpg 47,238,299,795,3 146,22,350,502,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_609.jpg 174,279,431,1066,1 261,215,476,1067,3 241,1,431,413,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_3040.jpg 243,1,604,424,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_2720.jpg 239,376,321,511,0 536,268,600,383,0 240,104,323,277,2 471,82,624,360,2 593,110,740,471,2 339,102,390,194,2 394,70,434,194,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_511.jpg 286,322,336,402,0 68,310,115,381,0 113,192,156,322,1 159,197,233,351,1 1,193,60,492,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1779.jpg 331,95,400,282,1 422,606,570,816,1 345,233,487,816,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_3898.jpg 163,226,225,318,0 267,206,303,281,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_163.jpg 75,654,159,769,0 75,715,183,874,0 375,710,475,873,0 665,715,779,866,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1908.jpg 243,170,401,345,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_229.jpg 196,54,389,468,1 109,325,266,650,1 195,323,432,648,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第二分司_299.jpg 181,86,211,165,2 113,87,198,253,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6232.jpg 223,64,279,155,1 337,281,421,379,1 250,144,386,367,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2875.jpg 110,193,179,285,3 134,114,206,247,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_334.jpg 469,458,602,863,1 326,1018,524,1546,1 400,180,683,1505,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5357.jpg 62,528,118,622,1 328,831,377,909,0 539,787,586,853,0 716,748,747,792,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_144.jpg 435,350,509,454,1 349,364,424,475,1 367,683,460,927,1 138,683,199,833,1 510,319,668,934,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_3600.jpg 185,1,1271,566,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_7646.jpg 256,498,328,662,3 263,507,298,621,1 741,540,800,743,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_278.jpg 106,250,180,450,2 390,253,488,465,2 343,410,404,511,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1123.jpg 129,120,499,215,4 130,279,552,532,4 83,196,639,344,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1494.jpg 156,226,272,443,0 502,269,608,431,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7979.jpg 304,79,554,1024,3 403,577,558,1024,3 660,749,768,1016,1 330,192,432,502,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_322.jpg 494,292,663,1067,3 146,807,411,1067,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7009.jpg 67,272,422,1018,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2861.jpg 192,215,270,279,0 249,145,262,155,0 217,147,229,158,0 143,148,154,160,0 103,152,114,163,0 85,156,101,172,0 64,161,81,181,0 2,176,41,206,0 342,135,370,167,2 176,47,195,74,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1126.jpg 418,33,781,884,3 359,607,482,912,1 581,191,723,472,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_4588.jpg 14,1,384,536,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_5328.jpg 258,1,524,548,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2568.jpg 278,110,410,456,1 139,472,222,650,1 83,456,139,689,1 196,336,367,794,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5316.jpg 393,1,626,548,3 302,4,456,560,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2342.jpg 295,104,372,347,1 38,671,137,819,1 218,663,334,819,1 205,114,404,819,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第四分司_6280.jpg 340,44,435,560,3 405,361,514,593,1 383,25,466,192,1 280,347,406,559,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5162.jpg 342,52,504,758,3 434,534,548,745,1 583,534,636,652,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2439.jpg 45,316,114,422,2 37,213,74,294,2 1,310,44,399,2 5,277,61,393,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_4796.jpg 256,145,304,256,3 253,341,303,416,0 647,236,729,468,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6993.jpg 286,78,329,177,0 136,64,264,383,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_396.jpg 217,445,275,606,2 318,390,565,972,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_122.jpg 341,99,597,1288,3 405,429,569,942,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_8.jpg 318,97,437,451,2 277,588,395,1067,2 34,620,269,1041,2 155,12,500,1032,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2353.jpg 301,1,424,523,3 321,28,422,299,1 380,245,521,512,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_854.jpg 3,48,104,424,1 384,161,401,193,0 365,171,387,209,0 316,190,346,241,0 254,229,295,299,0 116,317,180,436,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1712.jpg 87,119,247,520,1 256,144,392,562,1 404,146,549,534,1 547,112,689,523,1 699,125,800,511,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_374.jpg 318,345,395,553,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_5485.jpg 209,255,625,1208,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_407.jpg 190,323,213,366,0 361,396,425,481,0 319,183,390,303,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第二分司_321.jpg 215,412,286,538,0 367,378,425,467,0 380,269,443,438,1 149,260,203,411,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_4975.jpg 455,88,556,419,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_8246.jpg 234,32,818,282,3 170,450,282,631,0 520,404,604,552,0 700,380,764,487,0 744,320,775,380,0 868,352,914,433,0 909,338,954,409,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1026.jpg 423,219,592,600,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_1274.jpg 182,279,325,697,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2453.jpg 165,325,272,505,0 207,228,297,380,0 137,386,262,581,0 243,63,378,400,1 405,65,567,476,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_1524.jpg 82,483,157,602,0 577,370,602,412,0 172,162,253,346,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_279.jpg 48,127,209,533,2 302,189,416,412,2 385,403,460,525,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_4988.jpg 18,193,739,477,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2021.jpg 315,258,405,415,3 306,124,386,281,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_567.jpg 213,4,415,720,3 437,106,705,859,1 1,107,148,819,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2102.jpg 439,487,511,643,2 443,534,648,886,2 180,734,489,1062,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_5818.jpg 296,650,378,816,1 345,395,403,559,1 338,364,391,816,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_4535.jpg 286,442,359,600,1 375,20,435,174,1 326,3,442,599,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_405.jpg 72,276,128,555,3 223,274,297,500,3 234,327,292,439,1 260,400,333,501,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十一分司_1765.jpg 166,244,258,394,0 431,261,551,455,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第十五分司_482.jpg 47,154,449,799,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_8291.jpg 218,565,285,700,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_360.jpg 10,134,115,468,1 236,169,296,394,2 283,175,326,411,2 277,178,377,459,2 363,185,462,469,2 445,215,560,492,2 564,252,669,384,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6303.jpg 199,137,250,316,1 251,474,357,707,1 196,247,316,713,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_6012.jpg 372,362,447,808,3 356,230,414,405,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_4611.jpg 251,617,365,789,0 277,307,321,432,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_5622.jpg 230,173,362,672,3 89,27,294,682,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_348.jpg 223,163,264,266,2 128,162,151,215,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_4186.jpg 363,280,455,528,1 297,94,408,271,1 313,155,503,527,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_827.jpg 101,16,329,636,3 75,110,229,330,1 184,402,308,668,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十一分司_2036.jpg 198,1,252,126,2 171,136,265,387,2 137,65,302,369,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_331.jpg 280,455,354,600,0 295,61,362,312,3 430,232,553,597,2 566,202,685,597,2 672,214,786,598,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_448.jpg 133,203,238,549,2 238,206,325,517,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_5951.jpg 228,360,602,1050,3 326,1,482,407,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_3859.jpg 193,153,364,513,4 207,1,392,209,4 226,21,466,381,4 337,247,588,555,4 427,2,523,273,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_643.jpg 67,330,184,518,0 119,242,169,333,0 215,297,379,417,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4491.jpg 109,6,558,1067,3 387,680,689,1067,1 138,2,274,349,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1802.jpg 275,13,376,189,1 272,32,388,569,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_287.jpg 598,33,827,583,2 356,109,578,584,2 156,45,380,578,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_4826.jpg 25,45,222,118,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1455.jpg 136,127,279,630,1 266,59,516,606,3 1,87,251,807,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2530.jpg 36,105,548,594,1 5,107,472,587,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6482.jpg 506,254,563,322,0 558,219,604,286,0 292,209,325,258,0 231,256,288,336,0 323,230,401,298,1 342,146,439,269,1 557,99,650,218,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第六分司_32.jpg 226,253,386,431,1 422,235,473,526,1 461,238,515,583,1 508,226,596,616,1 295,433,461,655,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_1598.jpg 402,387,676,419,3 366,121,409,412,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_389.jpg 393,142,670,701,3 265,533,717,955,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_328.jpg 324,512,419,764,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_1889.jpg 243,7,587,802,3 292,42,415,342,1 473,525,653,879,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2765.jpg 350,53,472,445,3 166,234,294,396,1 305,126,446,443,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2606.jpg 184,79,220,174,2 85,367,171,429,1 162,150,219,429,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_4971.jpg 142,389,248,601,1 272,130,355,326,1 178,50,378,600,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_1572.jpg 219,184,361,439,0 426,143,527,335,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_8382.jpg 1,372,435,780,3 170,198,458,367,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1598.jpg 233,368,400,594,3 218,8,391,400,1 354,421,630,592,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_3247.jpg 605,424,682,536,0 963,869,1193,1233,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第十一分司_2553.jpg 75,122,118,233,2 149,108,192,234,2 287,139,319,245,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_132.jpg 8,153,97,367,2 111,239,150,300,0 241,301,308,397,0 231,132,282,301,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5906.jpg 36,444,116,554,0 116,507,216,639,0 404,386,450,471,0 416,468,499,597,0 671,146,780,481,1 249,389,353,532,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1301.jpg 161,1,410,709,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_2185.jpg 340,229,491,486,1 407,322,543,528,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_3303.jpg 200,201,234,258,0 228,213,273,290,0 247,191,265,245,0 280,179,305,224,0 335,214,381,289,0 365,178,389,223,0 443,184,466,246,0 451,195,492,266,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_31.jpg 607,542,770,1051,1 189,197,449,891,1 85,474,468,1064,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1852.jpg 302,237,528,1040,3 329,312,542,937,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_348.jpg 262,214,306,340,2 45,344,95,427,0 226,403,305,567,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1820.jpg 205,1,452,1040,3 412,421,649,1105,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_6462.jpg 126,520,231,684,0 294,491,366,624,0 434,464,493,555,0 543,448,587,548,0 343,317,453,672,1 583,307,686,704,1 647,313,777,740,1 759,317,818,571,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_4976.jpg 347,86,447,342,1 488,612,606,969,1 392,291,536,967,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_4702.jpg 168,544,552,1334,3 426,361,572,738,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2076.jpg 339,143,440,354,1 299,58,510,600,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十一分司_1326.jpg 583,381,651,498,0 654,315,702,382,0 753,342,800,438,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1571.jpg 328,425,578,800,1 201,98,419,800,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_7425.jpg 355,291,410,382,0 175,109,271,318,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2356.jpg 269,36,367,500,4 348,1,499,472,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第二分司_211.jpg 261,154,435,504,1 429,827,921,1279,1 308,401,658,1280,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十分司_1285.jpg 1431,19,1663,682,3 1518,374,1670,675,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1640.jpg 294,45,362,197,1 1,111,430,366,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6853.jpg 286,84,414,433,1 348,626,571,992,1 645,622,729,803,1 633,753,743,987,1 224,373,372,1000,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_7088.jpg 64,96,113,207,0 94,107,173,238,0 203,146,288,288,0 445,223,538,383,0 654,309,789,501,0 646,2,800,280,1 437,1,529,207,1 503,1,552,158,1 404,106,722,173,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5720.jpg 381,257,547,631,3 479,286,535,404,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_1960.jpg 196,397,264,484,0 253,322,293,382,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1860.jpg 409,318,569,741,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_5422.jpg 311,221,484,915,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_4371.jpg 222,399,293,516,0 505,220,560,377,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6830.jpg 79,229,452,296,5 79,278,458,350,5 9,144,367,220,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第四分司_4129.jpg 188,1,355,446,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_2667.jpg 146,491,293,749,0 114,48,294,519,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2826.jpg 395,435,491,686,3 389,378,441,520,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1833.jpg 278,321,378,482,1 384,678,492,917,1 282,293,524,910,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6551.jpg 124,509,253,557,4 157,40,323,69,4 180,105,277,123,4 176,168,278,196,4 168,196,285,221,4 146,220,277,262,4 138,311,277,344,4 138,377,269,403,4 143,134,326,189,5 150,274,271,312,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_1412.jpg 67,292,113,404,1 345,283,415,527,1 315,202,355,317,1 116,347,140,380,0 190,412,246,503,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_5064.jpg 159,327,490,1280,3 183,334,612,1245,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3783.jpg 431,1,800,894,3 4,1,520,828,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6073.jpg 107,398,173,514,1 318,500,362,580,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第十五分司_423.jpg 35,185,195,492,2 228,191,378,499,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2008.jpg 79,77,110,146,1 79,114,174,342,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_913.jpg 633,232,671,328,0 842,327,868,379,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第二分司_381.jpg 1,501,51,575,0 439,600,520,712,0 711,512,784,629,0 124,316,200,562,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_990.jpg 178,368,217,477,1 292,104,339,242,1 167,25,400,521,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6873.jpg 438,344,517,445,0 220,51,434,538,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1369.jpg 206,187,355,814,3 262,36,372,327,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3633.jpg 318,916,481,1280,1 431,191,556,478,1 346,402,550,1273,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_8230.jpg 297,188,363,679,3 296,72,360,213,1 335,500,412,678,1 249,486,333,680,1 218,522,247,611,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_526.jpg 265,81,351,285,1 217,540,337,879,1 205,256,335,848,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_1697.jpg 369,399,504,542,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_3754.jpg 89,255,132,325,0 273,286,328,371,0 113,342,184,464,0 254,160,277,206,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_115.jpg 222,296,634,581,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_394.jpg 417,81,599,560,1 345,162,724,952,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_609.jpg 286,300,415,642,2 503,570,720,933,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_8151.jpg 282,577,570,1101,3 374,379,535,931,1 62,558,275,1136,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_3104.jpg 316,291,477,971,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1650.jpg 44,228,448,1068,3 282,253,413,545,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_48.jpg 230,227,317,567,2 313,238,396,563,2 397,241,503,567,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2086.jpg 152,200,248,444,3 103,13,248,297,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1125.jpg 358,59,635,809,3 437,240,528,466,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1662.jpg 825,1,1220,1487,3 542,134,1163,1677,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第五分司_1177.jpg 491,649,576,780,0 478,505,491,525,0 493,523,517,562,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_2719.jpg 175,511,248,665,0 487,539,566,689,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第十一分司_2763.jpg 311,406,385,684,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第十分司_1187.jpg 773,616,943,913,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5690.jpg 193,488,330,771,0 483,468,619,727,0 239,29,560,778,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_506.jpg 252,2,580,589,1 285,91,582,599,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2618.jpg 193,105,456,692,3 239,175,380,387,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2218.jpg 165,7,565,887,3 359,86,471,483,1 104,585,209,901,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3111.jpg 128,444,350,976,1 313,123,561,584,1 217,448,477,980,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6841.jpg 363,18,485,354,1 206,584,378,986,1 255,160,447,986,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_4373.jpg 41,472,147,654,0 201,166,442,816,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2301.jpg 349,1,427,299,3 434,182,472,275,1 230,166,275,284,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3203.jpg 418,1,541,500,3 375,256,454,512,1 452,155,567,426,1 537,245,654,546,1 631,257,712,540,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_1295.jpg 553,411,637,545,0 375,398,457,523,0 193,391,277,512,0 1,386,81,511,0 180,133,237,194,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3956.jpg 198,129,264,294,1 215,240,298,674,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2022.jpg 268,264,338,418,3 257,149,327,299,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1785.jpg 202,261,528,1039,3 20,446,205,926,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2473.jpg 134,5,359,565,3 109,317,243,589,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_263.jpg 240,291,456,592,3 388,384,530,592,1 271,79,391,349,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_1208.jpg 551,558,675,759,0 113,321,217,599,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2010.jpg 350,908,612,1228,0 232,375,367,585,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_4178.jpg 34,257,100,355,0 56,4,200,349,2 223,6,337,314,2 314,201,466,489,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_1196.jpg 25,464,162,784,4 111,364,200,593,4 240,438,291,587,4 233,100,374,345,4 488,277,620,411,5 503,99,554,327,4 322,629,380,859,4 367,688,430,999,4 451,757,566,1052,4 655,723,746,1052,4 429,495,522,700,4 484,441,597,657,4 510,511,617,744,4 549,205,748,341,4 646,224,780,353,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2773.jpg 137,1,266,134,1 227,394,479,640,1 149,22,365,640,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_932.jpg 282,455,424,697,0 313,323,365,415,0 153,167,318,507,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_407.jpg 68,1,477,752,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2743.jpg 166,1,423,487,1 124,121,402,667,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_3650.jpg 214,81,378,600,1 578,36,773,604,1 486,165,592,604,1 340,148,505,604,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_6622.jpg 251,187,499,1068,3 390,215,490,451,1 156,800,374,1061,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_133.jpg 247,248,326,462,1 379,593,497,798,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_961.jpg 105,410,165,496,0 321,257,419,501,1 82,265,129,433,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_71.jpg 910,515,1010,693,0 434,230,551,490,2 518,201,682,445,2 657,196,774,415,2 577,396,802,588,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6560.jpg 558,345,691,407,5 65,1,619,699,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_5623.jpg 59,15,428,1067,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_299.jpg 36,187,151,437,2 209,216,338,433,2 402,210,516,447,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7670.jpg 256,167,545,766,3 292,241,391,447,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3688.jpg 295,133,425,714,4 660,159,790,733,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7140.jpg 515,273,697,1067,3 213,296,333,514,1 1,434,279,1029,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_613.jpg 204,55,459,729,3 348,418,477,707,1 248,391,313,571,1 377,428,391,463,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十一分司_2725.jpg 114,144,306,391,2 242,251,511,496,2 341,152,487,339,2 451,1,705,524,2 652,1,705,132,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第二分司_293.jpg 291,242,395,529,1 392,229,473,473,1 515,416,584,516,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_6790.jpg 110,160,162,539,4 204,209,262,489,4 265,241,325,493,4 324,254,395,496,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_1241.jpg 60,223,78,253,0 100,238,124,279,0 181,254,219,317,0 326,177,382,303,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7881.jpg 14,78,148,509,2 227,39,350,533,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_4662.jpg 87,551,397,1040,3 134,252,389,589,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_4321.jpg 1,1,124,469,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_1216.jpg 199,1,420,1011,3 402,404,632,1065,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_8400.jpg 302,324,518,788,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十二分司_196.jpg 229,492,407,960,3 275,286,415,625,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3429.jpg 392,9,518,618,3 460,423,563,663,1 634,411,703,659,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_1352.jpg 317,605,421,742,0 165,522,229,615,0 148,489,186,546,0 188,455,225,509,0 225,432,257,480,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_31.jpg 260,446,415,749,2 136,648,344,1040,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_2725.jpg 51,196,63,218,0 265,171,282,202,0 524,196,545,228,0 523,273,570,354,0 644,233,675,284,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1292.jpg 258,125,481,793,3 369,289,424,441,1 227,623,324,795,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_1142.jpg 1,678,99,869,0 244,698,369,895,0 452,717,585,940,0 671,579,752,707,0 234,368,348,704,1 466,371,542,668,1 624,382,675,545,1 686,381,763,596,1 752,390,786,549,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6311.jpg 87,140,121,319,4 127,67,218,438,4 236,152,284,340,4 283,186,343,381,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1345.jpg 13,397,49,468,0 362,429,412,527,0 87,297,176,484,2 340,296,383,470,2 411,288,429,375,2 430,308,457,373,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6653.jpg 199,290,374,700,3 224,148,345,575,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2078.jpg 254,148,800,1004,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_633.jpg 346,229,440,387,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_5595.jpg 197,199,285,423,1 369,469,441,680,1 202,286,327,702,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_978.jpg 288,176,386,368,0 118,182,327,516,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第三分司_5561.jpg 121,218,204,327,0 255,277,367,479,0 344,171,422,281,3 356,73,444,199,1 452,2,540,117,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_1438.jpg 340,67,487,1002,3 202,699,392,1020,1 305,215,477,507,1 303,718,404,1002,1 530,738,627,1067,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6373.jpg 139,362,273,744,3 207,105,428,798,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_3400.jpg 119,536,344,983,3 247,346,461,966,3 394,698,506,976,1 230,257,319,507,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5726.jpg 509,367,563,459,0 590,320,622,373,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_85.jpg 416,151,531,623,1 498,202,711,802,1 678,151,800,670,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5688.jpg 524,117,643,784,3 625,212,780,680,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5539.jpg 189,4,387,854,3 276,92,350,311,1 144,555,275,841,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3198.jpg 228,279,294,503,2 272,269,342,447,2 351,267,420,469,2 497,261,554,408,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_6244.jpg 169,1,632,936,3 57,1,486,854,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第十五分司_481.jpg 32,257,672,1040,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_251.jpg 137,120,268,486,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_554.jpg 111,260,1023,472,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第一分司_186.jpg 166,187,365,591,1 410,645,750,1067,1 202,359,530,1067,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_39.jpg 89,119,154,335,3 133,44,191,138,1 67,239,113,335,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5259.jpg 381,75,550,556,3 389,118,457,281,1 4,399,79,519,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7274.jpg 1,617,169,1144,3 168,889,414,1181,1 399,810,724,1273,1 618,554,724,930,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_205.jpg 242,431,368,663,0 121,201,184,291,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_5985.jpg 86,249,182,419,0 136,165,178,251,0 169,134,203,196,0 194,123,218,169,0 304,54,353,212,1 349,81,397,182,1 27,62,93,181,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_251.jpg 48,397,157,537,0 161,290,223,380,0 443,394,540,536,0 300,99,423,397,2 403,123,535,400,2 528,73,646,442,2 346,228,463,437,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_2393.jpg 66,188,800,290,4 216,288,800,385,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第二分司_218.jpg 56,1,366,687,3 193,255,391,695,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_311.jpg 68,208,270,815,2 370,198,657,1067,2 632,169,798,1067,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2631.jpg 86,886,158,1026,0 117,938,215,1116,0 382,973,492,1184,0 642,929,738,1106,0 382,191,430,324,1 419,196,473,339,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1114.jpg 468,213,634,558,1 242,633,448,1047,1 360,420,567,992,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2200.jpg 635,282,735,369,4 454,449,529,514,4 456,92,661,198,3 372,459,414,497,0 393,455,447,502,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_543.jpg 500,417,695,772,1 504,583,707,958,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[场所环境类]/第十分司_1509.jpg 253,157,462,693,2 762,190,866,517,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_3659.jpg 763,1358,1474,3254,3 870,951,1313,2419,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_3312.jpg 263,20,513,775,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_5848.jpg 5,205,133,330,1 34,1,595,491,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2068.jpg 158,32,244,298,1 15,154,245,816,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_6722.jpg 102,291,632,420,5 69,381,659,513,5 58,486,599,604,5 159,492,653,699,5 35,534,776,843,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第二分司_100.jpg 347,375,366,411,0 332,397,369,457,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_6509.jpg 288,1,426,571,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_2404.jpg 258,195,307,277,0 295,203,357,302,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_2533.jpg 269,807,411,1059,1 565,745,717,1050,1 494,308,607,507,1 419,154,636,990,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_882.jpg 66,292,95,346,0 80,314,127,391,0 279,377,357,513,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_221.jpg 215,139,259,241,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十二分司_35.jpg 188,299,247,464,1 190,421,270,728,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6580.jpg 322,440,431,650,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_5609.jpg 374,240,599,1052,3 356,39,513,318,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_6112.jpg 326,381,590,545,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_466.jpg 161,473,325,841,1 398,124,497,379,1 206,245,527,801,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_132.jpg 617,317,664,385,0 674,348,738,449,0 749,423,835,537,0 584,215,638,356,1 560,222,589,290,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十五分司_593.jpg 146,284,213,457,2 220,278,289,493,2 231,87,311,247,2 168,182,289,447,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6292.jpg 297,228,475,813,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第一分司_197.jpg 394,96,512,339,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_358.jpg 173,442,298,669,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_4307.jpg 466,387,567,571,0 530,242,570,302,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2391.jpg 223,173,496,948,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1540.jpg 750,351,796,415,0 623,351,683,433,0 481,340,534,427,0 324,360,395,447,0 5,357,48,428,0 160,367,233,458,0
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第五分司_1291.jpg 92,106,281,483,1 331,577,584,1033,1 84,223,570,1040,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_6068.jpg 256,115,527,992,3 441,686,478,784,1 394,174,492,399,1 242,730,352,986,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_975.jpg 297,234,350,360,2 263,271,301,371,2
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第三分司_6935.jpg 1,223,273,762,2 725,117,1024,767,2 304,88,761,765,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1565.jpg 324,1,483,663,3 325,393,408,685,1 535,384,714,821,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_5119.jpg 223,130,293,429,5 351,167,415,420,5
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第四分司_2253.jpg 3,114,655,528,4
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1271.jpg 1,369,671,607,3 345,486,457,745,1 643,488,718,648,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_5655.jpg 111,696,166,804,0 104,748,188,883,0 409,721,492,872,0 464,696,522,811,0 125,512,218,777,1 271,505,371,763,1 391,504,454,765,1 470,494,544,767,1 542,508,664,859,1 268,584,354,846,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第十分司_1452.jpg 206,270,268,494,2 454,267,519,450,2 19,568,89,698,0 9,255,107,595,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_1384.jpg 325,149,647,1067,3 376,211,592,590,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_7270.jpg 1,191,185,719,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第五分司_1329.jpg 207,400,285,623,1 246,104,313,245,1 232,81,310,617,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第三分司_4577.jpg 45,475,105,576,0 138,442,174,506,0 265,478,320,564,0 200,268,344,405,3 299,339,411,613,1 381,406,497,586,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_1364.jpg 501,138,720,954,3 146,206,397,960,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[设备设施类]/第四分司_1274.jpg 125,295,273,700,3 310,218,619,909,3 402,100,571,418,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第十五分司_441.jpg 141,261,268,640,3
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第四分司_2479.jpg 298,418,691,1068,3 251,49,478,981,1 481,715,799,1068,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[作业环境类]/第四分司_6535.jpg 28,178,96,285,0 81,194,154,307,0 161,217,246,354,0 261,240,346,399,0 454,69,489,120,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[防护用品类]/第三分司_2922.jpg 13,1,197,638,3 153,196,389,640,1
+E:\危险源识别系统\yolo3-keras-techi/VOCdevkit/VOC2088/JPEGImages/[操作行为类]/第三分司_6906.jpg 482,752,569,973,1 254,135,396,464,1 113,718,306,1038,1 183,365,369,882,3

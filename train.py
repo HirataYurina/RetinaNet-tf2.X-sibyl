@@ -13,7 +13,6 @@ from core.loss import retina_loss
 from dataset.get_dataset import DataGenerator
 import logging
 
-
 retina_model = RetinaNet(out_channels=config.MODEL.OUT_CHANNELS,
                          num_anchors=config.MODEL.NUM_ANCHORS,
                          num_classes=config.MODEL.NUM_CLASSES)
@@ -63,6 +62,10 @@ if __name__ == '__main__':
     save_path = config.TRAIN.SAVE_PATH
     diary_path = config.TRAIN.DIARY_PATH
 
+    inputs = keras.Input(shape=(input_shape[0], input_shape[1], 3))
+    outputs = retina_model(inputs)
+    retina_model = keras.Model(inputs, outputs)
+
     with open(train_txt) as f:
         train_anno = f.readlines()
     num_train = len(train_anno)
@@ -91,13 +94,14 @@ if __name__ == '__main__':
     num_freeze_layers = config.TRAIN.FREEZE
     for i in range(num_freeze_layers):
         retina_model.layers[i].trainable = False
+    print('have frozen resnet model and start training')
 
     for i in range(epoch1):
         epoch_loss = 0
         step_counter = 0
-        for data in generate_data_1:
+        for data in train_steps_1:
 
-            if step_counter == train_steps_1:
+            if step_counter == 20:
                 break
 
             image_data = data[0]
@@ -127,6 +131,7 @@ if __name__ == '__main__':
                                 input_shape=input_shape,
                                 num_classes=num_classes,
                                 batch_size=batch_size2)
+    # TODO: try to use tf.data.Dataset.from_generator().prefetch to improve GPU-Util
     generate_data_2 = data_gene_2.data_generate()
 
     for i in range(epoch2 - epoch1):
