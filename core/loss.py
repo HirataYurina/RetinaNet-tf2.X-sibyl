@@ -61,9 +61,10 @@ def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=co
     """
 
     label_weights = tf.expand_dims(label_weights, axis=-1)
+    y_pred_sigmoid = tf.sigmoid(y_pred)
 
     alpha = alpha * y_true + (1 - alpha) * (1 - y_true)
-    pt = y_true * y_pred + (1 - y_true) * (1 - y_pred)
+    pt = y_true * y_pred_sigmoid + (1 - y_true) * (1 - y_pred_sigmoid)
     factor = tf.pow(x=(1 - pt), y=gamma)
     cross_entropy = tf.nn.sigmoid_cross_entropy_with_logits(y_true, y_pred)
 
