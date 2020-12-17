@@ -99,9 +99,9 @@ if __name__ == '__main__':
     for i in range(epoch1):
         epoch_loss = 0
         step_counter = 0
-        for data in train_steps_1:
+        for data in generate_data_1:
 
-            if step_counter == 20:
+            if step_counter == train_steps_1:
                 break
 
             image_data = data[0]
