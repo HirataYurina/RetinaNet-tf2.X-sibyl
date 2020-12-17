@@ -26,6 +26,10 @@ class FPN(keras.Model):
         self.p5_upsample = layers.UpSampling2D(size=(2, 2), name='p5_upsample')
         self.p4_upsample = layers.UpSampling2D(size=(2, 2), name='p4_upsample')
 
+        self.p3 = layers.Conv2D(out_channels, 3, padding='same', name='p3')
+        self.p4 = layers.Conv2D(out_channels, 3, padding='same', name='p4')
+        self.p5 = layers.Conv2D(out_channels, 3, padding='same', name='p5')
+
     def __call__(self, inputs):
         """
         FPN for retina-net.
@@ -44,10 +48,13 @@ class FPN(keras.Model):
         p5 = self.c5p5(c5)
         p4 = self.c4p4(c4) + self.p5_upsample(p5)
         p3 = self.c3p3(c3) + self.p4_upsample(p4)
+        p5 = self.p5(p5)
+        p4 = self.p4(p4)
+        p3 = self.p3(p3)
 
-        p6 = self.p5p6(p5)
-        p7 = self.p6p7(p6)
-        p7 = layers.ReLU()(p7)
+        p6 = self.p5p6(c5)
+        p6_relu = layers.ReLU()(p6)
+        p7 = self.p6p7(p6_relu)
 
         return [p3, p4, p5, p6, p7]
 
