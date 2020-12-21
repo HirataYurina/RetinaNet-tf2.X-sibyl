@@ -60,22 +60,27 @@ def trim_zeros(inputs):
 
 
 def box2delta(anchors, gt_boxes, means, std):
-    anchors_x = anchors[..., 0]
-    anchors_y = anchors[..., 1]
-    anchors_w = anchors[..., 2]
-    anchors_h = anchors[..., 3]
+    # According to the information provided by a keras-retinanet author, they got marginally better results using
+    # the following way of bounding box parametrization.
+    # See https://github.com/fizyr/keras-retinanet/issues/1273#issuecomment-585828825 for more details
+    anchors_left = anchors[..., 0:2] - anchors[..., 2:4] / 2.0
+    anchors_right = anchors[..., 0:2] + anchors[..., 2:4] / 2.0
 
-    gt_x = gt_boxes[..., 0]
-    gt_y = gt_boxes[..., 1]
-    gt_w = gt_boxes[..., 2]
-    gt_h = gt_boxes[..., 3]
+    # gt_x1 = gt_boxes[..., 0]
+    # gt_y1 = gt_boxes[..., 1]
+    # gt_x2 = gt_boxes[..., 2]
+    # gt_y2 = gt_boxes[..., 3]
+    # gt_x = (gt_x1 + gt_x2) / 2.0
+    # gt_y = (gt_y1 + gt_y2) / 2.0
+    # gt_w = gt_x2 - gt_x1
+    # gt_h = gt_y2 - gt_y1
 
-    dx = (gt_x - anchors_x) / anchors_w  # anchors_w always bigger than 0
-    dy = (gt_y - anchors_y) / anchors_h
-    dw = tf.math.log(gt_w / anchors_w)
-    dh = tf.math.log(gt_h / anchors_h)
+    dx1 = (gt_boxes[..., 0] - anchors_left[..., 0]) / anchors[..., 2]  # anchors_w always bigger than 0
+    dy1 = (gt_boxes[..., 1] - anchors_left[..., 1]) / anchors[..., 3]
+    dx2 = (gt_boxes[..., 2] - anchors_right[..., 0]) / anchors[..., 2]
+    dy2 = (gt_boxes[..., 3] - anchors_right[..., 1]) / anchors[..., 3]
 
-    delta = tf.stack([dx, dy, dw, dh], axis=-1)
+    delta = tf.stack([dx1, dy1, dx2, dy2], axis=-1)
     # we need to normalize the delta.
     # I think this operation can make the boxes shift of different images smaller.
     # So, make distribution tighter can make model more stable.

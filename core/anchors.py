@@ -17,9 +17,9 @@ class Anchors(object):
     _default = {'sizes': [32, 64, 128, 256, 512],
                 'strides': [8, 16, 32, 64, 128],
                 'ratios': [0.5, 1.0, 2.0],
-                'scales': [2 ** 0, 2 ** (1 / 3), 2 ** (2 / 3)],
+                'scales': [2 ** 0, 2 ** (1.0 / 3.0), 2 ** (2.0 / 3.0)],
                 'target_means': [0., 0., 0., 0.],
-                'target_stds': [0.1, 0.1, 0.2, 0.2]}
+                'target_stds': [0.2, 0.2, 0.2, 0.2]}
 
     def __init__(self,
                  positive_threshold=config.TRAIN.POSITIVE_THRES,
@@ -153,6 +153,10 @@ class Anchors(object):
 
         box_weights = tf.tensor_scatter_nd_update(box_weights, pos_index, tf.ones(shape=(num_positive,)))
 
+        # label_equal_one = tf.where(labels == 1)
+        # label_weights_zero = tf.where(label_weights == 0)
+        # box_weights_one = tf.where(box_weights == 1)
+
         return labels, delta, label_weights, box_weights
 
 
@@ -166,5 +170,3 @@ if __name__ == '__main__':
     with open('../datas/2088_trainval.txt') as f:
         gt = f.readline()
         boxes = np.array([np.array(list(map(int, box.split(',')))) for box in gt.split()[1:]])
-
-    results = anchors.anchors_target_total(anchors_generated, boxes, 6)

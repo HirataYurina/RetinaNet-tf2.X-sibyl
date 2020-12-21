@@ -234,6 +234,6 @@ if __name__ == '__main__':
 
     print(len(model.layers))
 
-    # weights_path = r'E:\pretrained-model\resnet50_coco_best_v2.1.0.h5'
-    # model.load_weights(weights_path, by_name=True)
-    # print('load weights successfully!')
+    weights_path = '../datas/resnet50_coco_best_v2.1.0.h5'
+    model.load_weights(weights_path, by_name=True)
+    print('load weights successfully!')

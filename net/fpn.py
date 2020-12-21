@@ -17,11 +17,11 @@ class FPN(keras.Model):
 
         self.out_channels = out_channels
 
-        self.c3p3 = layers.Conv2D(out_channels, 1, name='c3p3')
-        self.c4p4 = layers.Conv2D(out_channels, 1, name='c4p4')
-        self.c5p5 = layers.Conv2D(out_channels, 1, name='c5p5')
-        self.p5p6 = layers.Conv2D(out_channels, 3, strides=2, padding='same', name='p5p6')
-        self.p6p7 = layers.Conv2D(out_channels, 3, strides=2, padding='same', name='p6p7')
+        self.c3p3 = layers.Conv2D(out_channels, 1, name='c3_reduced')
+        self.c4p4 = layers.Conv2D(out_channels, 1, name='c4_reduced')
+        self.c5p5 = layers.Conv2D(out_channels, 1, name='c5_reduced')
+        self.p5p6 = layers.Conv2D(out_channels, 3, strides=2, padding='same', name='p6')
+        self.p6p7 = layers.Conv2D(out_channels, 3, strides=2, padding='same', name='p7')
 
         self.p5_upsample = layers.UpSampling2D(size=(2, 2), name='p5_upsample')
         self.p4_upsample = layers.UpSampling2D(size=(2, 2), name='p4_upsample')

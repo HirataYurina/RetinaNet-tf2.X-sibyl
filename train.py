@@ -8,18 +8,21 @@
 import tensorflow as tf
 import tensorflow.keras as keras
 from config.configs import config
-from retinanet import RetinaNet
+from retinanet import RetinaNet, retinanet
 from core.loss import retina_loss
 from dataset.get_dataset import DataGenerator
 import logging
+from net.resnet import ResNet
+from net.fpn import FPN
+from net.subnet import class_subnet, box_subnet
 
-retina_model = RetinaNet(out_channels=config.MODEL.OUT_CHANNELS,
-                         num_anchors=config.MODEL.NUM_ANCHORS,
-                         num_classes=config.MODEL.NUM_CLASSES)
+# retina_model = RetinaNet(out_channels=config.MODEL.OUT_CHANNELS,
+#                          num_anchors=config.MODEL.NUM_ANCHORS,
+#                          num_classes=config.MODEL.NUM_CLASSES)
 
 
 # training strategy can refer to "Focal Loss for Dense Object Detection"
-def train_step(optimizer, input_img, y_true, batch_size):
+def train_step(optimizer, input_img, y_true, batch_size, retina_model):
 
     with tf.GradientTape() as tape:
         y_pred = retina_model(input_img, training=True)
@@ -62,9 +65,15 @@ if __name__ == '__main__':
     save_path = config.TRAIN.SAVE_PATH
     diary_path = config.TRAIN.DIARY_PATH
 
-    inputs = keras.Input(shape=(input_shape[0], input_shape[1], 3))
-    outputs = retina_model(inputs)
-    retina_model = keras.Model(inputs, outputs)
+    # inputs = keras.Input(shape=(input_shape[0], input_shape[1], 3))
+    # outputs = retina_model(inputs)
+    # retina_model = keras.Model(inputs, outputs)
+    inputs = keras.Input(shape=(416, 416, 3))
+
+    retina_model = retinanet(inputs, out_channels=256, num_classes=6, num_anchors=9)
+    # retina_model.summary()
+    retina_model.load_weights('./datas/resnet50_coco_best_v2.1.0.h5', by_name=True, skip_mismatch=True)
+    print('load weights successfully!!')
 
     with open(train_txt) as f:
         train_anno = f.readlines()
@@ -110,9 +119,11 @@ if __name__ == '__main__':
             losses = train_step(optimizer=optimizer1,
                                 input_img=image_data,
                                 y_true=y_true,
-                                batch_size=batch_size1)
+                                batch_size=batch_size1,
+                                retina_model=retina_model)
             step_counter += 1
             epoch_loss += losses
+            print('one step losses---', losses)
         print('epoch{}-loss:{}'.format(i + 1, epoch_loss))
         # save weights
         if step_counter % save_interval == 0:

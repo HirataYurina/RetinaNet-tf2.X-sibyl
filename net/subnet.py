@@ -97,18 +97,73 @@ class SubNet(keras.Model):
         return results
 
 
+# wrap classification subnet into one layer
+def class_subnet(inputs, out_channels, num_classes, num_anchors):
+    # inputs = keras.Input(shape=(None, None, out_channels))
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_classification_0')(inputs)
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_classification_1')(x)
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_classification_2')(x)
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_classification_3')(x)
+    x = layers.Conv2D(filters=num_classes * num_anchors, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.Constant(value=0),
+                      bias_initializer=BiasInitializer(pi=0.01),
+                      name='pyramid_classification')(x)
+
+    return x
+
+
+# wrap box regression subnet into one layer
+def box_subnet(inputs, out_channels, num_anchors):
+    # inputs = keras.Input(shape=(None, None, out_channels))
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_regression_0')(inputs)
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_regression_1')(x)
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_regression_2')(x)
+    x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_regression_3')(x)
+    x = layers.Conv2D(filters=4 * num_anchors, kernel_size=3, padding='same',
+                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
+                      bias_initializer=keras.initializers.Constant(value=0),
+                      name='pyramid_regression')(x)
+
+    return x
+
+
 if __name__ == '__main__':
     resnet_50 = ResNet(50)
-    inputs = keras.Input(shape=(416, 416, 3))
-    c2, c3, c4, c5 = resnet_50(inputs)
+    inputs_ = keras.Input(shape=(416, 416, 3))
+    c2, c3, c4, c5 = resnet_50(inputs_)
     p3, p4, p5, p6, p7 = FPN()([c2, c3, c4, c5])
 
     # 42,402,172 params
-    subnet = SubNet(out_channels=512,
-                    num_classes=6,
-                    num_anchors=6)
+    subnet = SubNet(out_channels=256,
+                    num_classes=80,
+                    num_anchors=9)
 
-    results = subnet([p3, p4, p5, p6, p7])
+    results_ = subnet([p3, p4, p5, p6, p7])
 
-    retinanet = keras.Model(inputs, results)
+    retinanet = keras.Model(inputs_, results_)
     retinanet.summary()
+    print(len(retinanet.layers))

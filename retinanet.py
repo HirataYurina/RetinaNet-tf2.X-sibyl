@@ -9,6 +9,8 @@ import tensorflow.keras as keras
 from net.resnet import ResNet
 from net.fpn import FPN
 from net.subnet import SubNet
+import tensorflow.keras.layers as layers
+from net.subnet import class_subnet, box_subnet
 
 
 class RetinaNet(keras.Model):
@@ -31,6 +33,39 @@ class RetinaNet(keras.Model):
         x = self.subnet(x)
 
         return x
+
+
+def retinanet(inputs, out_channels, num_classes, num_anchors):
+    resnet = ResNet(50)
+    C2, C3, C4, C5 = resnet(inputs)
+
+    P5 = keras.layers.Conv2D(256, kernel_size=1, strides=1, padding='same', name='C5_reduced')(C5)
+    # 38x38x256
+    P5_upsampled = layers.UpSampling2D(name='P5_upsampled')(P5)
+    P5 = keras.layers.Conv2D(256, kernel_size=3, strides=1, padding='same', name='P5')(P5)
+
+    # 38x38x256
+    P4 = keras.layers.Conv2D(256, kernel_size=1, strides=1, padding='same', name='C4_reduced')(C4)
+    P4 = keras.layers.Add(name='P4_merged')([P5_upsampled, P4])
+
+    P4_upsampled = layers.UpSampling2D(name='P4_upsampled')(P4)
+    P4 = keras.layers.Conv2D(256, kernel_size=3, strides=1, padding='same', name='P4')(P4)
+
+    # 75x75x256
+    P3 = keras.layers.Conv2D(256, kernel_size=1, strides=1, padding='same', name='C3_reduced')(C3)
+    P3 = keras.layers.Add(name='P3_merged')([P4_upsampled, P3])
+    P3 = keras.layers.Conv2D(256, kernel_size=3, strides=1, padding='same', name='P3')(P3)
+
+    P6 = keras.layers.Conv2D(256, kernel_size=3, strides=2, padding='same', name='P6')(C5)
+
+    P7 = keras.layers.Activation('relu', name='C6_relu')(P6)
+    P7 = keras.layers.Conv2D(256, kernel_size=3, strides=2, padding='same', name='P7')(P7)
+
+    features = [P3, P4, P5, P6, P7]
+
+    results = SubNet(out_channels, num_anchors, num_classes)(features)
+
+    return keras.Model(inputs, results)
 
 
 if __name__ == '__main__':
