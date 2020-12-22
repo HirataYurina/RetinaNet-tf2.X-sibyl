@@ -22,11 +22,11 @@ from net.subnet import class_subnet, box_subnet
 
 
 # training strategy can refer to "Focal Loss for Dense Object Detection"
-def train_step(optimizer, input_img, y_true, batch_size, retina_model):
+def train_step(optimizer, input_img, y_true, retina_model):
 
     with tf.GradientTape() as tape:
         y_pred = retina_model(input_img, training=True)
-        losses = retina_loss(y_pred, y_true, batch_size)
+        losses = retina_loss([y_true, y_pred])
 
     gradients = tape.gradient(losses, retina_model.trainable_variables)
     optimizer.apply_gradients(zip(gradients, retina_model.trainable_variables))
@@ -65,13 +65,10 @@ if __name__ == '__main__':
     save_path = config.TRAIN.SAVE_PATH
     diary_path = config.TRAIN.DIARY_PATH
 
-    # inputs = keras.Input(shape=(input_shape[0], input_shape[1], 3))
-    # outputs = retina_model(inputs)
-    # retina_model = keras.Model(inputs, outputs)
     inputs = keras.Input(shape=(416, 416, 3))
 
     retina_model = retinanet(inputs, out_channels=256, num_classes=6, num_anchors=9)
-    # retina_model.summary()
+    retina_model.summary()
     retina_model.load_weights('./datas/resnet50_coco_best_v2.1.0.h5', by_name=True, skip_mismatch=True)
     print('load weights successfully!!')
 
@@ -100,10 +97,10 @@ if __name__ == '__main__':
     optimizer1 = keras.optimizers.Adam(learning_rate=lr1)
 
     # training in stage 1
-    num_freeze_layers = config.TRAIN.FREEZE
-    for i in range(num_freeze_layers):
-        retina_model.layers[i].trainable = False
-    print('have frozen resnet model and start training')
+    # num_freeze_layers = config.TRAIN.FREEZE
+    # for i in range(num_freeze_layers):
+    #     retina_model.layers[i].trainable = False
+    # print('have frozen resnet model and start training')
 
     for i in range(epoch1):
         epoch_loss = 0
@@ -113,13 +110,12 @@ if __name__ == '__main__':
             if step_counter == train_steps_1:
                 break
 
-            image_data = data[0]
-            y_true = data[1:]
+            image_data = data[0][0]
+            y_true = data[0][1]
             # train one step
             losses = train_step(optimizer=optimizer1,
                                 input_img=image_data,
                                 y_true=y_true,
-                                batch_size=batch_size1,
                                 retina_model=retina_model)
             step_counter += 1
             epoch_loss += losses

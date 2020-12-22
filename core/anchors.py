@@ -70,11 +70,11 @@ class Anchors(object):
             # (h, w, 1, 2) --> (h, w, 9, 2)
             anchor_centers = tf.tile(anchor_centers, [1, 1, 9, 1])
             anchors_level = tf.concat([anchor_centers, wh_level], axis=-1)
-            anchors.append(anchors_level)
+            anchors.append(anchors_level / tf.cast(height, tf.float32))
 
         return anchors
 
-    def anchors_target_total(self, anchors, gt_boxes, num_classes):
+    def anchors_target_total(self, anchors, gt_boxes, num_classes, img_shape):
         """Generate ground truth
 
         Args:
@@ -83,18 +83,26 @@ class Anchors(object):
             num_classes:  a scalar
 
         Returns:
-            results
+            [box_results, class_results]
 
         """
-
-        results = []
+        gt_boxes = gt_boxes / img_shape[0]
+        class_results = []
+        box_results = []
 
         for anchor_level in anchors:
             labels, delta, label_weights, box_weights = \
                 self._anchors_target_level(anchor_level, gt_boxes, num_classes)
-            results.append([labels, delta, label_weights, box_weights])
+            labels = tf.reshape(labels, shape=(-1, num_classes))
+            delta = tf.reshape(delta, shape=(-1, 4))
+            label_weights = tf.reshape(label_weights, (-1, 1))
+            box_weights = tf.reshape(box_weights, (-1, 1))
+            class_results.append(tf.concat([labels, label_weights], axis=-1))
+            box_results.append(tf.concat([delta, box_weights], axis=-1))
+        class_results = tf.concat(class_results, axis=0)
+        box_results = tf.concat(box_results, axis=0)
 
-        return results
+        return [box_results, class_results]
 
     def _anchors_target_level(self, anchors_level, gt_boxes, num_classes):
 

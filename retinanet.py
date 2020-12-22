@@ -27,7 +27,7 @@ class RetinaNet(keras.Model):
                              num_anchors=num_anchors,
                              num_classes=num_classes)
 
-    def __call__(self, inputs, training=False, mask=None):
+    def __call__(self, inputs, training=True, mask=None):
         x = self.resnet(inputs, training=training)
         x = self.fpn(x)
         x = self.subnet(x)
@@ -63,7 +63,18 @@ def retinanet(inputs, out_channels, num_classes, num_anchors):
 
     features = [P3, P4, P5, P6, P7]
 
-    results = SubNet(out_channels, num_anchors, num_classes)(features)
+    class_results = []
+    box_results = []
+    classi_model = class_subnet(out_channels=out_channels, num_anchors=num_anchors, num_classes=num_classes)
+    box_model = box_subnet(out_channels=out_channels, num_anchors=num_anchors)
+
+    for feature in features:
+        class_results.append(classi_model(feature))
+        box_results.append(box_model(feature))
+    # concatenate -> (batch, 52*52*9, 4), (batch, 52*52*9, num_classes)
+    class_results = layers.Concatenate(axis=1)(class_results)
+    box_results = layers.Concatenate(axis=1)(box_results)
+    results = [box_results, class_results]
 
     return keras.Model(inputs, results)
 

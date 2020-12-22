@@ -98,8 +98,8 @@ class SubNet(keras.Model):
 
 
 # wrap classification subnet into one layer
-def class_subnet(inputs, out_channels, num_classes, num_anchors):
-    # inputs = keras.Input(shape=(None, None, out_channels))
+def class_subnet(out_channels, num_classes, num_anchors):
+    inputs = keras.Input(shape=(None, None, out_channels))
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
@@ -120,13 +120,14 @@ def class_subnet(inputs, out_channels, num_classes, num_anchors):
                       kernel_initializer=keras.initializers.Constant(value=0),
                       bias_initializer=BiasInitializer(pi=0.01),
                       name='pyramid_classification')(x)
+    x = layers.Reshape(target_shape=(-1, num_classes))(x)
 
-    return x
+    return keras.Model(inputs, x, name='classification_submodel')
 
 
 # wrap box regression subnet into one layer
-def box_subnet(inputs, out_channels, num_anchors):
-    # inputs = keras.Input(shape=(None, None, out_channels))
+def box_subnet(out_channels, num_anchors):
+    inputs = keras.Input(shape=(None, None, out_channels))
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
@@ -147,8 +148,9 @@ def box_subnet(inputs, out_channels, num_anchors):
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
                       name='pyramid_regression')(x)
+    x = layers.Reshape(target_shape=(-1, 4))(x)
 
-    return x
+    return keras.Model(inputs, x, name='regression_submodel')
 
 
 if __name__ == '__main__':
