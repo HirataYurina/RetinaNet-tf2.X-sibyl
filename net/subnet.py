@@ -103,18 +103,22 @@ def class_subnet(out_channels, num_classes, num_anchors):
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_classification_0')(inputs)
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_classification_1')(x)
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_classification_2')(x)
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_classification_3')(x)
     x = layers.Conv2D(filters=num_classes * num_anchors, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.Constant(value=0),
@@ -131,18 +135,22 @@ def box_subnet(out_channels, num_anchors):
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_regression_0')(inputs)
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_regression_1')(x)
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_regression_2')(x)
     x = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                       bias_initializer=keras.initializers.Constant(value=0),
+                      activation='relu',
                       name='pyramid_regression_3')(x)
     x = layers.Conv2D(filters=4 * num_anchors, kernel_size=3, padding='same',
                       kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),

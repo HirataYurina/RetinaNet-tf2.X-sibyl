@@ -35,7 +35,8 @@ class Anchors(object):
             img_shape: shape of input img [h, w]
 
         Returns:
-            anchors: a list of anchors for different level
+            anchors: corner coordinate
+                     a list of anchors for different level
 
         """
         levels = len(self.strides)
@@ -48,7 +49,7 @@ class Anchors(object):
             stride = self.strides[level]
             size = self.sizes[level]
             # (3, 3)
-            ratios_level, scales_level = tf.meshgrid(self.ratios, self.scales)
+            scales_level, ratios_level= tf.meshgrid(self.scales, self.ratios)
             w_level = tf.sqrt(tf.cast(tf.square(size), dtype='float32') / ratios_level)
             w_level_3_3 = w_level * scales_level
             w_level = tf.reshape(w_level_3_3, shape=(num_anchors, 1))
@@ -69,8 +70,11 @@ class Anchors(object):
             wh_level = tf.tile(tf.reshape(wh_level, shape=(1, 1, 9, 2)), tf.constant([grid_height, grid_width, 1, 1]))
             # (h, w, 1, 2) --> (h, w, 9, 2)
             anchor_centers = tf.tile(anchor_centers, [1, 1, 9, 1])
-            anchors_level = tf.concat([anchor_centers, wh_level], axis=-1)
-            anchors.append(anchors_level / tf.cast(height, tf.float32))
+            anchors_level = tf.concat([anchor_centers - wh_level / 2.0,
+                                       anchor_centers + wh_level / 2.0], axis=-1)
+            anchors.append(tf.clip_by_value(anchors_level / tf.cast(height, tf.float32),
+                                            clip_value_min=0,
+                                            clip_value_max=1))
 
         return anchors
 
@@ -108,9 +112,6 @@ class Anchors(object):
 
         gt_boxes = tf.cast(gt_boxes, tf.float32)
 
-        anchors_left = anchors_level[..., :2] - anchors_level[..., 2:] / 2
-        anchors_right = anchors_level[..., :2] + anchors_level[..., 2:] / 2
-        anchors = tf.concat([anchors_left, anchors_right], axis=-1)
         anchors_shape = tf.shape(anchors_level)
         height, width, num_anchors, _ = anchors_shape
         labels = tf.zeros(shape=(height, width, num_anchors, num_classes))
@@ -122,7 +123,7 @@ class Anchors(object):
             return labels, tf.zeros_like(anchors_level), \
                    tf.zeros(shape=(height, width, num_anchors)), tf.zeros(shape=(height, width, num_anchors))
 
-        ious = compute_ious(anchors, valid_gt[..., 0:4])
+        ious = compute_ious(anchors_level, valid_gt[..., 0:4])
         gt_class = tf.cast(valid_gt[..., 4], tf.int64)
 
         # (h, w, 9)

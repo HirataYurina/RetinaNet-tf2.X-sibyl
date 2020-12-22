@@ -63,8 +63,8 @@ def box2delta(anchors, gt_boxes, means, std):
     # According to the information provided by a keras-retinanet author, they got marginally better results using
     # the following way of bounding box parametrization.
     # See https://github.com/fizyr/keras-retinanet/issues/1273#issuecomment-585828825 for more details
-    anchors_left = anchors[..., 0:2] - anchors[..., 2:4] / 2.0
-    anchors_right = anchors[..., 0:2] + anchors[..., 2:4] / 2.0
+    anchors_w = anchors[..., 2] - anchors[..., 0]
+    anchors_h = anchors[..., 3] - anchors[..., 1]
 
     # gt_x1 = gt_boxes[..., 0]
     # gt_y1 = gt_boxes[..., 1]
@@ -75,10 +75,10 @@ def box2delta(anchors, gt_boxes, means, std):
     # gt_w = gt_x2 - gt_x1
     # gt_h = gt_y2 - gt_y1
 
-    dx1 = (gt_boxes[..., 0] - anchors_left[..., 0]) / anchors[..., 2]  # anchors_w always bigger than 0
-    dy1 = (gt_boxes[..., 1] - anchors_left[..., 1]) / anchors[..., 3]
-    dx2 = (gt_boxes[..., 2] - anchors_right[..., 0]) / anchors[..., 2]
-    dy2 = (gt_boxes[..., 3] - anchors_right[..., 1]) / anchors[..., 3]
+    dx1 = (gt_boxes[..., 0] - anchors[..., 0]) / anchors_w  # anchors_w always bigger than 0
+    dy1 = (gt_boxes[..., 1] - anchors[..., 1]) / anchors_h
+    dx2 = (gt_boxes[..., 2] - anchors[..., 2]) / anchors_w
+    dy2 = (gt_boxes[..., 3] - anchors[..., 3]) / anchors_h
 
     delta = tf.stack([dx1, dy1, dx2, dy2], axis=-1)
     # we need to normalize the delta.
