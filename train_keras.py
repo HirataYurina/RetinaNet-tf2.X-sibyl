@@ -10,7 +10,6 @@ from retinanet import retinanet
 from config.configs import config
 from dataset.get_dataset import DataGenerator
 from core.loss import retina_loss
-from test_net.retinanet import resnet_retinanet
 import tensorflow as tf
 
 
@@ -19,11 +18,10 @@ if __name__ == '__main__':
     tf.executing_eagerly = False
 
     inputs = keras.Input(shape=(416, 416, 3))
-    # retina_model = retinanet(inputs=inputs,
-    #                          out_channels=256,
-    #                          num_classes=6,
-    #                          num_anchors=9)
-    retina_model = resnet_retinanet(num_classes=6, inputs=inputs, num_anchors=9)
+    retina_model = retinanet(inputs=inputs,
+                             out_channels=256,
+                             num_classes=6,
+                             num_anchors=9)
     retina_model.load_weights('./datas/resnet50_coco_best_v2.1.0.h5', by_name=True, skip_mismatch=True)
     print('load weights successfully!!')
 

@@ -21,54 +21,56 @@ class SubNet(keras.Model):
                  num_classes,
                  **kwargs):
         super(SubNet, self).__init__(**kwargs)
+        self.num_classes = num_classes
 
         self.class_conv1 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                          kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                          bias_initializer=keras.initializers.Constant(value=0),
-                                         name='class_conv1')
+                                         name='pyramid_classification_0')
         self.class_conv2 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                          kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                          bias_initializer=keras.initializers.Constant(value=0),
-                                         name='class_conv2')
+                                         name='pyramid_classification_1')
         self.class_conv3 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                          kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                          bias_initializer=keras.initializers.Constant(value=0),
-                                         name='class_conv3')
+                                         name='pyramid_classification_2')
         self.class_conv4 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                          kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                          bias_initializer=keras.initializers.Constant(value=0),
-                                         name='class_conv4')
+                                         name='pyramid_classification_3')
         # ----------------------------------------------------- #
         # The kernel initializer is PriorProbability
         # ----------------------------------------------------- #
         self.class_out = layers.Conv2D(filters=num_classes * num_anchors, kernel_size=3, padding='same',
                                        kernel_initializer=keras.initializers.Constant(value=0),
                                        bias_initializer=BiasInitializer(pi=0.01),
-                                       name='class_out')
+                                       name='pyramid_classification')
 
         self.box_conv1 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                        kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                        bias_initializer=keras.initializers.Constant(value=0),
-                                       name='box_conv1')
+                                       name='pyramid_regression_0')
         self.box_conv2 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                        kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                        bias_initializer=keras.initializers.Constant(value=0),
-                                       name='box_conv2')
+                                       name='pyramid_regression_1')
         self.box_conv3 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                        kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                        bias_initializer=keras.initializers.Constant(value=0),
-                                       name='box_conv3')
+                                       name='pyramid_regression_2')
         self.box_conv4 = layers.Conv2D(filters=out_channels, kernel_size=3, padding='same',
                                        kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                        bias_initializer=keras.initializers.Constant(value=0),
-                                       name='box_conv4')
+                                       name='pyramid_regression_3')
         self.box_out = layers.Conv2D(filters=4 * num_anchors, kernel_size=3, padding='same',
                                      kernel_initializer=keras.initializers.RandomNormal(stddev=0.01),
                                      bias_initializer=keras.initializers.Constant(value=0),
-                                     name='box_out')
+                                     name='pyramid_regression')
 
     def __call__(self, inputs):
-        results = []
+        class_res = []
+        box_res = []
 
         for input_level in inputs:
             x = self.class_conv1(input_level)
@@ -81,6 +83,7 @@ class SubNet(keras.Model):
             x = layers.ReLU()(x)
             x = self.class_out(x)
             # x = layers.Activation(tf.nn.sigmoid)(x)
+            x = layers.Reshape(target_shape=(-1, self.num_classes))(x)
 
             y = self.box_conv1(input_level)
             y = layers.ReLU()(y)
@@ -91,10 +94,14 @@ class SubNet(keras.Model):
             y = self.box_conv4(y)
             y = layers.ReLU()(y)
             y = self.box_out(y)
+            y = layers.Reshape((-1, 4))(y)
 
-            results.append([x, y])
+            class_res.append(x)
+            box_res.append(y)
+        class_res = layers.Concatenate(axis=1)(class_res)
+        box_res = layers.Concatenate(axis=1)(box_res)
 
-        return results
+        return [box_res, class_res]
 
 
 # wrap classification subnet into one layer

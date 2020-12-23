@@ -8,8 +8,7 @@
 import tensorflow as tf
 import tensorflow.keras as keras
 from config.configs import config
-from test_net.retinanet import resnet_retinanet
-from retinanet import retinanet
+from retinanet import retinanet, RetinaNet
 from core.loss import retina_loss
 from dataset.get_dataset import DataGenerator
 import logging
@@ -69,8 +68,7 @@ if __name__ == '__main__':
     inputs = keras.Input(shape=(416, 416, 3))
 
     retina_model = retinanet(inputs, out_channels=256, num_classes=6, num_anchors=9)
-    # retina_model = resnet_retinanet(num_classes=6, inputs=inputs, num_anchors=9)
-    retina_model.summary()
+    # retina_model.summary()
     retina_model.load_weights('./datas/resnet50_coco_best_v2.1.0.h5', by_name=True, skip_mismatch=True)
     print('load weights successfully!!')
 
@@ -157,7 +155,7 @@ if __name__ == '__main__':
             losses = train_step(optimizer=optimizer2,
                                 input_img=image_data,
                                 y_true=y_true,
-                                batch_size=batch_size2)
+                                retina_model=retina_model)
             step_counter += 1
             epoch_loss += losses
         print('epoch{}-loss:{}'.format(epoch1 + i + 1, epoch_loss))

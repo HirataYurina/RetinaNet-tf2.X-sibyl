@@ -44,7 +44,7 @@ def smooth_l1(predictions, delta, box_weights, sigma=3):
     return smooth_l1_loss * box_weights, num_pos
 
 
-def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=config.TRAIN.ALPHA):
+def focal_loss(y_true, y_pred, label_weights, box_weights, gamma=config.TRAIN.SIGMA, alpha=config.TRAIN.ALPHA):
     """ Use focal loss to solve the problem of negative loss overwhelms positive loss.
     But, focal loss also has some disadvantages that it only considers problem of classification but
     does not consider problem of location regression.
@@ -64,6 +64,7 @@ def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=co
 
     """
 
+    box_bool = tf.equal(box_weights, 1)
     label_weights = tf.expand_dims(label_weights, axis=-1)
     y_pred_sigmoid = tf.sigmoid(y_pred)
 
@@ -74,7 +75,13 @@ def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=co
     factor = tf.pow(x=pt, y=gamma)
     cross_entropy = tf.nn.sigmoid_cross_entropy_with_logits(y_true, y_pred)
 
-    return label_weights * alpha * factor * cross_entropy
+    x = label_weights * alpha * factor * cross_entropy
+    x_bool = tf.boolean_mask(x, box_bool)
+    y_true_bool = tf.boolean_mask(y_true, box_bool)
+    y_pred_bool = tf.boolean_mask(y_pred_sigmoid, box_bool)
+    sum_x = tf.reduce_sum(x, axis=1)
+
+    return x
 
 
 def retina_loss(args):
@@ -98,7 +105,7 @@ def retina_loss(args):
     label_weights = y_true[1][..., 6]  # (batch, num_anchors)
 
     # class loss
-    class_loss = tf.reduce_sum(focal_loss(labels, class_pred, label_weights))
+    class_loss = tf.reduce_sum(focal_loss(labels, class_pred, label_weights, box_weights))
     # box loss
     box_loss, num_positive = smooth_l1(box_pred, delta, box_weights)
     box_loss = tf.reduce_sum(box_loss)

@@ -90,7 +90,7 @@ class Anchors(object):
             [box_results, class_results]
 
         """
-        gt_boxes = gt_boxes / img_shape[0]
+        gt_boxes[..., :4] = gt_boxes[..., :4] / img_shape[0]
         class_results = []
         box_results = []
 
