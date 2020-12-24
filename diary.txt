@@ -1,0 +1,35 @@
+
+2020-10-1
+1.There are some problems in my codes:
+(1) losses will be very huge such as 300000.
+(2) In training, the losses will not descend.
+
+So, i inspect errors in my codes.
+Maybe there are some errors in backbone, subnet, loss function and target generator.
+
+Check backbone and subnet:
+(1) backbone: backbone is resnet and backbone is right.
+(2) subnet: subnet is shared by every stage and it is right too.
+##################################################################################
+(3) the total net can be loaded by pre-trained weights, so it proves net is ok.
+##################################################################################
+
+Check loss function:
+(1) there are one error in focal loss that i forgot to use sigmoid to change prediction to be logit.
+
+2020-12-20
+Check target generator:
+(1) the corners coordinate of anchors are confused by center coordinate.
+(2) box2delta function is different from faster rcnn and yoloV3.
+
+2020-12-23
+##################################################################################
+Subnet: i don't use activation function(relu) in subnet.
+So, the loss is very big and network is not stable.
+##################################################################################
+
+2020-12-24
+##################################################################################
+Optimizer: lr should be 0.0001 and clipnorm=0.001 to avoid loss unstable.
+##################################################################################
+

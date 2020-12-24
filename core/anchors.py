@@ -72,9 +72,12 @@ class Anchors(object):
             anchor_centers = tf.tile(anchor_centers, [1, 1, 9, 1])
             anchors_level = tf.concat([anchor_centers - wh_level / 2.0,
                                        anchor_centers + wh_level / 2.0], axis=-1)
+            # #############################################################################
+            # normalize anchors coordinate
             anchors.append(tf.clip_by_value(anchors_level / tf.cast(height, tf.float32),
                                             clip_value_min=0,
                                             clip_value_max=1))
+            # #############################################################################
 
         return anchors
 
@@ -90,7 +93,10 @@ class Anchors(object):
             [box_results, class_results]
 
         """
+        # ####################################################
+        # normalize ground truth coordinate
         gt_boxes[..., :4] = gt_boxes[..., :4] / img_shape[0]
+        # ####################################################
         class_results = []
         box_results = []
 

@@ -79,7 +79,7 @@ class DataGenerator:
                 if i == 0:
                     np.random.shuffle(self.anno_lines)
                 image, boxes = get_random_data(self.anno_lines[i], self.input_shape)
-                results = self.Anchor.anchors_target_total(anchors, boxes, self.num_classes)
+                results = self.Anchor.anchors_target_total(anchors, boxes, self.num_classes, self.input_shape)
                 image_data.append(image)
                 targets_3.append(results[0])
                 targets_4.append(results[1])

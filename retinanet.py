@@ -80,8 +80,8 @@ def retinanet(inputs, out_channels, num_classes, num_anchors):
 
 
 if __name__ == '__main__':
-    inputs = keras.Input(shape=(416, 416, 3))
+    inputs_ = keras.Input(shape=(416, 416, 3))
     retina_model = RetinaNet(256, 9, 6)
-    outputs = retina_model(inputs)
+    outputs = retina_model(inputs_)
     # model = keras.Model(inputs, outputs)
     print(len(retina_model.layers))

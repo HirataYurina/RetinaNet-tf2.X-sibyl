@@ -16,9 +16,9 @@ def smooth_l1(predictions, delta, box_weights, sigma=3):
         make gradients so big.
     L2: At the beginning of optimization, the gradients is so big.
     Smooth L1: Can solve the problems of L1 and L2 loss.
-           / 0.5 * x * x  x <= 1
+           { 0.5 * x * x  x <= 1
     Loss =
-           \ |x| - 0.5    x > 1
+           { |x| - 0.5    x > 1
     Args:
         predictions: box regression [height, width, num_anchors, 4]
         delta: the delta of ground truth [height, width, num_anchors, 4]
@@ -44,7 +44,7 @@ def smooth_l1(predictions, delta, box_weights, sigma=3):
     return smooth_l1_loss * box_weights, num_pos
 
 
-def focal_loss(y_true, y_pred, label_weights, box_weights, gamma=config.TRAIN.SIGMA, alpha=config.TRAIN.ALPHA):
+def focal_loss(y_true, y_pred, label_weights, gamma=config.TRAIN.SIGMA, alpha=config.TRAIN.ALPHA):
     """ Use focal loss to solve the problem of negative loss overwhelms positive loss.
     But, focal loss also has some disadvantages that it only considers problem of classification but
     does not consider problem of location regression.
@@ -64,7 +64,6 @@ def focal_loss(y_true, y_pred, label_weights, box_weights, gamma=config.TRAIN.SI
 
     """
 
-    box_bool = tf.equal(box_weights, 1)
     label_weights = tf.expand_dims(label_weights, axis=-1)
     y_pred_sigmoid = tf.sigmoid(y_pred)
 
@@ -76,10 +75,12 @@ def focal_loss(y_true, y_pred, label_weights, box_weights, gamma=config.TRAIN.SI
     cross_entropy = tf.nn.sigmoid_cross_entropy_with_logits(y_true, y_pred)
 
     x = label_weights * alpha * factor * cross_entropy
-    x_bool = tf.boolean_mask(x, box_bool)
-    y_true_bool = tf.boolean_mask(y_true, box_bool)
-    y_pred_bool = tf.boolean_mask(y_pred_sigmoid, box_bool)
-    sum_x = tf.reduce_sum(x, axis=1)
+
+    # pos_bool = tf.equal(box_weights, 1)
+    # x_pos = tf.boolean_mask(x, pos_bool)
+    # y_true_pos = tf.boolean_mask(y_true, pos_bool)
+    # y_pred_pos = tf.boolean_mask(y_pred_sigmoid, pos_bool)
+    # sum_x = tf.reduce_sum(x, axis=1)
 
     return x
 
@@ -88,8 +89,8 @@ def retina_loss(args):
     """retina loss
 
     Args:
-        y_true: [(batch, num_anchors, 5), (batch, num_anchors, 7)]
-        y_pred: [(batch, num_anchors, 4), (batch, num_anchors, 6)]
+        args: y_true: [(batch, num_anchors, 5), (batch, num_anchors, 7)]
+              y_pred: [(batch, num_anchors, 4), (batch, num_anchors, 6)]
 
     Returns:
         loss
@@ -105,7 +106,7 @@ def retina_loss(args):
     label_weights = y_true[1][..., 6]  # (batch, num_anchors)
 
     # class loss
-    class_loss = tf.reduce_sum(focal_loss(labels, class_pred, label_weights, box_weights))
+    class_loss = tf.reduce_sum(focal_loss(labels, class_pred, label_weights))
     # box loss
     box_loss, num_positive = smooth_l1(box_pred, delta, box_weights)
     box_loss = tf.reduce_sum(box_loss)
@@ -116,7 +117,6 @@ def retina_loss(args):
 # This function has been deprecated
 # ###################################
 def retina_loss_other(args, batch_size):
-
     y_pred = args[0]
     y_true = args[1]
 
@@ -143,7 +143,6 @@ def retina_loss_other(args, batch_size):
         box_pred_stage = tf.reshape(box_pred_stage, shape=(batch_size, h, w, 9, -1))
 
         for j in range(batch_size):
-
             class_pred_batch = class_pred_stage[j]
             box_pred_batch = box_pred_stage[j]
 

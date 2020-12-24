@@ -7,7 +7,6 @@
 
 import tensorflow.keras as keras
 import tensorflow.keras.layers as layers
-import tensorflow as tf
 
 
 class FPN(keras.Model):

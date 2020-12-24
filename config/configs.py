@@ -15,8 +15,8 @@ config.MODEL.NUM_ANCHORS = 9
 config.MODEL.NUM_CLASSES = 6
 
 config.TRAIN = EasyDict()
-config.TRAIN.LR1 = 0.001
-config.TRAIN.LR2 = 0.0001
+config.TRAIN.LR1 = 0.0001
+config.TRAIN.LR2 = 0.00001
 config.TRAIN.BATCH_SIZE1 = 2
 config.TRAIN.BATCH_SIZE2 = 2
 config.TRAIN.EPOCH1 = 50

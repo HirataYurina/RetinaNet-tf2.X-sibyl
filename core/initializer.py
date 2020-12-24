@@ -6,8 +6,6 @@
 # software: PyCharm
 
 import tensorflow.keras as keras
-import numpy as np
-import math
 import tensorflow as tf
 
 

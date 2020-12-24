@@ -8,13 +8,11 @@
 import tensorflow as tf
 import tensorflow.keras as keras
 from config.configs import config
-from retinanet import retinanet, RetinaNet
+from retinanet import retinanet
 from core.loss import retina_loss
 from dataset.get_dataset import DataGenerator
 import logging
-from net.resnet import ResNet
-from net.fpn import FPN
-from net.subnet import class_subnet, box_subnet
+
 
 # retina_model = RetinaNet(out_channels=config.MODEL.OUT_CHANNELS,
 #                          num_anchors=config.MODEL.NUM_ANCHORS,
@@ -66,7 +64,6 @@ if __name__ == '__main__':
     diary_path = config.TRAIN.DIARY_PATH
 
     inputs = keras.Input(shape=(416, 416, 3))
-
     retina_model = retinanet(inputs, out_channels=256, num_classes=6, num_anchors=9)
     # retina_model.summary()
     retina_model.load_weights('./datas/resnet50_coco_best_v2.1.0.h5', by_name=True, skip_mismatch=True)
@@ -85,7 +82,7 @@ if __name__ == '__main__':
     train_steps_1 = num_train // batch_size1
     train_steps_2 = num_train // batch_size2
 
-    # ---------------------------------------------------------------------------
+    # #########################################################################
     # data generator
     data_gene_1 = DataGenerator(anno_lines=train_anno,
                                 input_shape=input_shape,
@@ -94,8 +91,7 @@ if __name__ == '__main__':
     generate_data_1 = data_gene_1.data_generate()
 
     # first stage
-    optimizer1 = keras.optimizers.Adam(learning_rate=lr1)
-
+    optimizer1 = keras.optimizers.Adam(learning_rate=lr1, clipnorm=0.001)
     # training in stage 1
     num_freeze_layers = config.TRAIN.FREEZE
     for i in range(num_freeze_layers):
@@ -125,7 +121,7 @@ if __name__ == '__main__':
         if step_counter % save_interval == 0:
             retina_model.save_weights(save_path + 'epoch{}-loss:{}.h5'.format(i + 1, epoch_loss))
 
-    # ---------------------------------------------------------------------------
+    # #########################################################################
     # training in stage 2
     # second stage optimizer
     optimizer2 = keras.optimizers.Adam(learning_rate=lr2)
@@ -133,7 +129,6 @@ if __name__ == '__main__':
     for layer in retina_model.layers:
         layer.trainable = True
     # second data generator
-        # data generator
     data_gene_2 = DataGenerator(anno_lines=train_anno,
                                 input_shape=input_shape,
                                 num_classes=num_classes,
@@ -149,8 +144,8 @@ if __name__ == '__main__':
             if step_counter == train_steps_2:
                 break
 
-            image_data = data[0]
-            y_true = data[1:]
+            image_data = data[0][0]
+            y_true = data[0][1]
             # train one step
             losses = train_step(optimizer=optimizer2,
                                 input_img=image_data,

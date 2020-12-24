@@ -63,7 +63,7 @@ if __name__ == '__main__':
     generate_data_1 = data_gene_1.data_generate()
     # ####################################################
 
-    optimizer1 = keras.optimizers.Adam(learning_rate=0.001)
+    optimizer1 = keras.optimizers.Adam(learning_rate=1e-04, clipnorm=0.001)
     # freeze the first 174 layers
     # training in stage 1
     num_freeze_layers = config.TRAIN.FREEZE
