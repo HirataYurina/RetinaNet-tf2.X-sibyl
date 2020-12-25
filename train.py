@@ -12,6 +12,7 @@ from retinanet import retinanet
 from core.loss import retina_loss
 from dataset.get_dataset import DataGenerator
 import logging
+import time
 
 
 # retina_model = RetinaNet(out_channels=config.MODEL.OUT_CHANNELS,
@@ -20,6 +21,7 @@ import logging
 
 
 # training strategy can refer to "Focal Loss for Dense Object Detection"
+@ tf.function
 def train_step(optimizer, input_img, y_true, retina_model):
 
     with tf.GradientTape() as tape:
@@ -101,9 +103,10 @@ if __name__ == '__main__':
     for i in range(epoch1):
         epoch_loss = 0
         step_counter = 0
+        start = time.time()
         for data in generate_data_1:
 
-            if step_counter == train_steps_1:
+            if step_counter == 40:
                 break
 
             image_data = data[0][0]
@@ -116,7 +119,9 @@ if __name__ == '__main__':
             step_counter += 1
             epoch_loss += losses
             print('one step losses---', losses)
+        end = time.time()
         print('epoch{}-loss:{}'.format(i + 1, epoch_loss))
+        print('epoch{} spends {}s'.format(i + 1, end - start))
         # save weights
         if step_counter % save_interval == 0:
             retina_model.save_weights(save_path + 'epoch{}-loss:{}.h5'.format(i + 1, epoch_loss))
