@@ -93,7 +93,7 @@ if __name__ == '__main__':
     generate_data_1 = data_gene_1.data_generate()
 
     # first stage
-    optimizer1 = keras.optimizers.Adam(learning_rate=lr1, clipnorm=0.001)
+    optimizer1 = keras.optimizers.Adam(learning_rate=lr1, clipnorm=0.001, amsgrad=True)
     # training in stage 1
     num_freeze_layers = config.TRAIN.FREEZE
     for i in range(num_freeze_layers):
@@ -106,7 +106,7 @@ if __name__ == '__main__':
         start = time.time()
         for data in generate_data_1:
 
-            if step_counter == 40:
+            if step_counter == train_steps_1:
                 break
 
             image_data = data[0][0]
